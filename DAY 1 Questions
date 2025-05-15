@@ -1,0 +1,50 @@
+Given quetsions me user input nahi lena hai Scanner wagera se khud se Varible consider karke 
+jaise int a = 5, int b = 7 khud se kar sakte hai goal is to build logic not learn all fuctions
+or JAVA
+
+Guys real simple questions please attempt all and if you have any questions at all please ask me on Group or personally on watsapp Everyone knows I have told people how to do a+b and a-b 
+Please don't hesitate now matter how simple the doubt is some time small bugs like i++ and j++ can cause error so ask any time on group or personally 
+
+1. Create Variable like int a = 5 or int b = 100 and Print it
+
+2. Add Two Numbers and print it                                                                                                
+  
+3. Subtract Two Numbers and print it
+
+4. Multiply Two Numbers and print it
+
+5. Divide Two Numbers and print it
+
+6. Add Three Numbers and print it
+
+7. Print Numbers 1 to 10 Using Loop
+Use a for loop to print numbers like 1 2 3 4 5 6 7 8 9 10
+
+8. Print Numbers 5 to 1 Using Loop
+Again use a for loop to print 5 4 3 2 1
+
+9. Check if Two Numbers are Equal
+Hint: Use if 
+print Equal or Not Equal
+
+10. Sum of Numbers from 1 to 5
+Use a for loop
+
+IUC Quetsions 
+(If You Can) Do this questions if you feel confident you can or we will give answers of all or them tomorrow
+
+1. Print first 5 even Numbers
+print 2, 4, 6, 8, 10 using a loop
+
+2. Check if a Number is Even or Odd
+Use if else
+
+3.Find the bigger number                                         
+  Use If Else and print A is bigger or B is bigger  
+
+4. Print Multiplication Table of 3
+Use a loop to print 3 x 1 = 3 to 3 x 10 = 30
+
+5. Print Squares of First 5 Numbers
+Print 1 4 9 16 25 but not like just do System.out.print(1) and System.out.print(4)
+Use a for loop
