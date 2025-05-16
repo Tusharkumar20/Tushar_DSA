@@ -1,0 +1,120 @@
+// 1. Print value of i, then do i++ and print again                    
+public static void main(String[] args) {
+    int i = 5;
+    System.out.println(i);   // ?
+    i++;
+    System.out.println(i);   // ?
+}
+
+// 2. Use ++i and see what prints
+public static void main(String[] args) {
+    int i = 5;
+    System.out.println(++i); // ?
+}
+
+// 3. Use i++ and see what prints
+public static void main(String[] args) {
+    int i = 5;
+    System.out.println(i++); // ?
+    System.out.println(i);   // ?
+}
+
+// 4. Use both ++i and i++ in same program
+public static void main(String[] args) {
+    int i = 3;
+    System.out.println(++i); // ?
+    System.out.println(i++); // ?
+    System.out.println(i);   // ?
+}
+
+// 5. Pre-decrement vs Post-decrement
+public static void main(String[] args) {
+    int i = 4;
+    System.out.println(--i); // ?
+    System.out.println(i--); // ?
+    System.out.println(i);   // ?
+}
+
+// 6. Simple calculation with post-increment
+public static void main(String[] args) {
+    int a = 2;
+    int b = a++ + 5;
+    System.out.println(b);   // ?
+    System.out.println(a);   // ?
+}
+
+// 7. Simple calculation with pre-increment
+public static void main(String[] args) {
+    int a = 2;
+    int b = ++a + 5;
+    System.out.println(b);   // ?
+    System.out.println(a);   // ?
+}
+
+// 8. What happens if we do i = i++?
+public static void main(String[] args) {
+    int i = 10;
+    i = i++;
+    System.out.println(i);   // ?
+}
+
+// 9. Mix of increment and decrement
+public static void main(String[] args) {
+    int x = 5;
+    int y = 10;
+    int z = x++ + --y;
+    System.out.println(z);   // ?
+    System.out.println(x);   // ?
+    System.out.println(y);   // ?
+}
+
+// 10. Try ++ inside print with multiple operations
+public static void main(String[] args) {
+    int a = 3;
+    System.out.println(++a + a++); // ?
+    System.out.println(a);         // ?
+}
+
+
+IUC Questions
+
+// IUC 1. Predict output and explain
+public static void main(String[] args) {
+    int i = 1;
+    int j = i++ + i++ + ++i;
+    System.out.println(j);   // ?
+}
+
+// IUC 2. Compare values after multiple increments
+public static void main(String[] args) {
+    int a = 5;
+    int b = a++ + ++a;
+    System.out.println(a == b); // true/false                                                            
+}
+
+// IUC 3. Find final value after many changes
+public static void main(String[] args) {
+    int i = 0;
+    i++;
+    ++i;
+    i--;
+    --i;
+    System.out.println(i); // ?
+}
+
+// IUC 4. Use i++ inside if condition
+public static void main(String[] args) {
+    int i = 5;
+    if (i++ == 5) {
+        System.out.println("Yes");  // Yes/No
+    } else {
+        System.out.println("No");
+    }
+}
+
+// IUC 5. Trace value of variable step-by-step
+public static void main(String[] args) {
+    int a = 1;
+    a = a++ + a++ + ++a;
+    System.out.println(a); // ?
+}
