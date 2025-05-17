@@ -1,0 +1,63 @@
+1. Check if a number is positive or negative 
+Hint: Positive numbers are more than 0, negative are less than 0.
+
+Example: 5 → Positive, -3 → Negative
+
+2. Check if a number is even or odd (use %)
+Hint: Even numbers leave 0 remainder when divided by 2.
+Try dividing 6 ÷ 2 = 3 → remainder 0 → Even
+Try dividing 7 ÷ 2 = 3 → remainder 1 → Odd
+
+3. Check if a number is divisible by 5
+Hint: Divisible by 5 means no remainder when divided by 5. (use %)
+Example: 10, 15, 20 → all divisible by 5
+
+4. Check if two numbers are equal or not
+Hint: Think about the meaning of equal. use ==
+Example: 5 and 5 → Equal; 7 and 8 → Not equal
+
+5. Find which number is greater between two numbers
+Hint: Compare both numbers. use >
+Example: Compare 45 and 30 → 45 is greater
+
+6. Check if a number is zero or not(== or use !=)                   
+
+7. Check if a number is a multiple of 3
+Hint: Multiples of 3 → 3, 6, 9, 12, 15, 18 (use %)                                                                                                                        
+Divide and see if there’s no remainder
+
+8. Check if a number lies between 1 and 100
+Hint: Number should be at least 1 and at most 100
+Example: 5 → Yes, 120 → No
+
+9. Check if a number is greater than 50 and less than 100
+Hint: Both conditions must be true
+Example: 75 → Yes, 40 → No
+
+10. Check if a number is less than 10 or greater than 90
+Hint: Either one condition is enough
+Example: 5 → Yes, 95 → Yes, 50 → No
+
+IUC (If You Can) — Stretch Questions
+Try these if you feel confident. We’ll discuss them tomorrow in class!
+
+IUC 1. Check if a number is divisible by both 3 and 5
+Hint: Try 15, 30, 45 — all divisible by both
+
+IUC 2. Check if a number has 3 digits
+Hint: Number should be between 100 and 999
+
+Examples: 345 → Yes, 99 → No
+
+IUC 3. Check if a number is odd and greater than 50
+Hint: Two conditions — is it odd? Is it more than 50?
+
+IUC 4. Check if a number is not divisible by 2 and not divisible by 3
+Hint: It leaves a remainder with both 2 and 3
+
+Try numbers like 7, 11, etc.
+
+IUC 5. Check if a number is exactly between 10 and 20 (but not equal to 10 or 20)
+Hint: It should be more than 10, less than 20
+
+Example: 11 → Yes, 10 → No, 20 → No
