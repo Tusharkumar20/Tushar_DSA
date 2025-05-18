@@ -1,0 +1,150 @@
+1. Check if a number is positive or negative
+
+int num = 5;
+if (num > 0) {
+    System.out.println("Positive");
+} else {
+    System.out.println("Negative");
+}
+// 5 is greater than 0 → Output: Positive
+
+2. Check if a number is even or odd (use %)
+
+int num = 7;
+if (num % 2 == 0) {
+    System.out.println("Even");
+} else {
+    System.out.println("Odd");
+}
+// 7 % 2 = 1 → Not zero → Output: Odd
+
+3. Check if a number is divisible by 5
+
+int num = 20;
+if (num % 5 == 0) {
+    System.out.println("Divisible by 5");
+} else {
+    System.out.println("Not divisible by 5");
+}
+// 20 % 5 = 0 → Output: Divisible by 5
+
+4. Check if two numbers are equal or not
+
+int a = 7, b = 8;
+if (a == b) {
+    System.out.println("Equal");
+} else {
+    System.out.println("Not equal");
+}
+// 7 is not equal to 8 → Output: Not equal
+
+5. Find which number is greater between two numbers
+
+int a = 45, b = 30;
+if (a > b) {
+    System.out.println("a is greater");
+} else {
+    System.out.println("b is greater");
+}
+// 45 > 30 → Output: a is greater
+
+6. Check if a number is zero or not
+
+int num = 0;
+if (num == 0) {
+    System.out.println("Zero");
+} else {
+    System.out.println("Not Zero");
+}
+// num == 0 → Output: Zero
+
+7. Check if a number is a multiple of 3
+
+int num = 12;
+if (num % 3 == 0) {
+    System.out.println("Multiple of 3");
+} else {
+    System.out.println("Not a multiple of 3");
+}
+// 12 % 3 = 0 → Output: Multiple of 3
+
+8. Check if a number lies between 1 and 100
+
+int num = 120;
+if (num >= 1 && num <= 100) {
+    System.out.println("Yes, in range");
+} else {
+    System.out.println("No, not in range");
+}
+// 120 is not between 1 and 100 → Output: No, not in range
+
+9. Check if a number is greater than 50 and less than 100
+
+int num = 75;
+if (num > 50 && num < 100) {
+    System.out.println("Yes");
+} else {
+    System.out.println("No");
+}
+// 75 is between 50 and 100 → Output: Yes
+
+10. Check if a number is less than 10 or greater than 90
+
+int num = 5;
+if (num < 10 || num > 90) {
+    System.out.println("Yes");
+} else {
+    System.out.println("No");
+}
+// 5 < 10 → Output: Yes
+
+
+IUC (If You Can) – Answers
+IUC 1. Check if a number is divisible by both 3 and 5
+
+int num = 30;
+if (num % 3 == 0 && num % 5 == 0) {
+    System.out.println("Yes");
+} else {
+    System.out.println("No");
+}
+// 30 % 3 = 0 and 30 % 5 = 0 → Output: Yes
+
+IUC 2. Check if a number has 3 digits
+
+int num = 345;
+if (num >= 100 && num <= 999) {
+    System.out.println("Yes");
+} else {
+    System.out.println("No");
+}
+// 345 is between 100 and 999 → Output: Yes
+
+IUC 3. Check if a number is odd and greater than 50
+int num = 63;
+if (num % 2 != 0 && num > 50) {
+    System.out.println("Yes");
+} else {
+    System.out.println("No");
+}
+// 63 is odd and > 50 → Output: Yes
+
+IUC 4. Check if a number is not divisible by 2 and not divisible by 3                    
+  
+int num = 7;
+if (num % 2 != 0 && num % 3 != 0) {
+    System.out.println("Yes");
+} else {
+    System.out.println("No");
+}
+// 7 % 2 = 1, 7 % 3 = 1 → Output: Yes
+
+IUC 5. Check if a number is exactly between 10 and 20 (but not equal to 10 or 20)
+
+int num = 15;
+if (num > 10 && num < 20) {
+    System.out.println("Yes");
+} else {
+    System.out.println("No");
+}
+// 15 is more than 10 and less than 20 → Output: Yes
