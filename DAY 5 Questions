@@ -1,0 +1,56 @@
+very simple doing level up slowly bhai 2 mahine hai aaram se
+
+1. Create an array of 4 values: 5, 10, 15, 20. Print the first and last values.
+Hint: Use arr[0] and arr[3]
+
+2. What will this print?
+
+arr[0] = 7;  
+arr[1] = arr[0] * 2;  
+System.out.println(arr[1]);  
+Think: Multiply by 2
+
+3. Set the second value of array to 99. Then print it.
+Hint: Second means index 1 → arr[1] = 99;
+
+4. Print sum of first 3 values in this array: 4, 5, 6, 7
+Hint: Add arr[0], arr[1], arr[2]
+
+5. Create an array of size 3. Set values to 11, 22, 33. Then print only the middle one.
+Hint: Middle in 3-size is index 1
+
+6. Check if the last value is greater than the first.
+Hint: if (arr[3] > arr[0])
+
+7. If arr[0] = 2, arr[1] = 4, arr[2] = 6 — make arr[3] = arr[0] + arr[2], and print it
+Think: 2 + 6 = 8
+
+8. Print "Yes" if first value is less than last value(last value access karne ke liye arr[arr.length -1])
+Hint: if (arr[0] < arr[3])
+
+9. What is the output?
+
+arr[1] = 3;  
+arr[2] = arr[1] * arr[1];  
+System.out.println(arr[2]);  
+Think: 3 × 3 = 9
+
+10. array ki value Print karo sirf agar uski third value is equal to 100 
+Hint: if (arr[2] == 100)
+
+IUC – Extra Practice for Day 5
+
+1. Store 5 values in array: 1, 2, 3, 4, 5. Print all using a loop
+Hint: Use for (int i = 0; i < 5; i++) and arr[i]
+
+2. Print "Match" if the first and last value in array are same
+Hint: if (arr[0] == arr[4])
+
+3. Count how many values are greater than 10 in this array: 5, 15, 20, 8
+Hint: Use a loop and counter. if (arr[i] > 10)
+
+4. If array is: 3, 6, 9 — print sum of all values using loop
+Hint: Add each arr[i] in loop
+
+5. Create array of 4 values. Replace all values with 0 (manually, no loop). Then print all
+Hint: arr[0] = 0; arr[1] = 0; ...
