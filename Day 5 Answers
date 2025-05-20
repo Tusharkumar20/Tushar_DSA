@@ -1,0 +1,129 @@
+1. Create an array of 4 values: 5, 10, 15, 20. Print the first and last values.
+
+int[] arr = {5, 10, 15, 20};
+System.out.println(arr[0]);
+System.out.println(arr[3]);
+// Output: 5, 20
+
+2. What will this print?
+
+int[] arr = new int[2];
+arr[0] = 7;
+arr[1] = arr[0] * 2;
+System.out.println(arr[1]);
+// 7 * 2 = 14 → Output: 14
+
+3. Set the second value of array to 99. Then print it.
+
+int[] arr = {10, 20, 30};
+arr[1] = 99;
+System.out.println(arr[1]);
+// Output: 99
+
+4. Print sum of first 3 values in this array: 4, 5, 6, 7
+
+int[] arr = {4, 5, 6, 7};
+int sum = arr[0] + arr[1] + arr[2];
+System.out.println(sum);
+// 4 + 5 + 6 = 15 → Output: 15
+
+5. Create an array of size 3. Set values to 11, 22, 33. Then print only the middle one.
+
+int[] arr = {11, 22, 33};
+System.out.println(arr[1]);
+// Output: 22
+
+6. Check if the last value is greater than the first.
+
+int[] arr = {5, 10, 15, 20};
+if (arr[3] > arr[0]) {
+    System.out.println("Yes");
+}
+// 20 > 5 → Output: Yes
+
+7. If arr[0] = 2, arr[1] = 4, arr[2] = 6 — make arr[3] = arr[0] + arr[2], and print it
+
+int[] arr = new int[4];
+arr[0] = 2;
+arr[1] = 4;
+arr[2] = 6;
+arr[3] = arr[0] + arr[2];
+System.out.println(arr[3]);
+// 2 + 6 = 8 → Output: 8
+
+8. Print "Yes" if first value is less than last value
+
+int[] arr = {3, 5, 7, 9};
+if (arr[0] < arr[arr.length - 1]) {
+    System.out.println("Yes");
+}
+// 3 < 9 → Output: Yes
+
+9. What is the output?
+
+int[] arr = new int[3];
+arr[1] = 3;
+arr[2] = arr[1] * arr[1];
+System.out.println(arr[2]);
+// 3 * 3 = 9 → Output: 9
+
+10. Array ki value print karo sirf agar uski third value is equal to 100
+
+int[] arr = {10, 20, 100, 40};
+if (arr[2] == 100) {
+    System.out.println(arr[2]);
+}
+// arr[2] == 100 → Output: 100
+
+Day 5 – IUC Answers
+
+IUC 1. Store 5 values in array: 1, 2, 3, 4, 5. Print all using a loop
+
+int[] arr = {1, 2, 3, 4, 5};
+for (int i = 0; i < 5; i++) {
+    System.out.println(arr[i]);
+}
+// Output: 1 2 3 4 5
+
+IUC 2. Print "Match" if the first and last value in array are same
+
+int[] arr = {9, 2, 3, 4, 9};
+if (arr[0] == arr[4]) {
+    System.out.println("Match");
+}
+// 9 == 9 → Output: Match
+
+IUC 3. Count how many values are greater than 10 in this array: 5, 15, 20, 8
+
+int[] arr = {5, 15, 20, 8};
+int count = 0;
+for (int i = 0; i < 4; i++) {
+    if (arr[i] > 10) {
+        count++;
+    }
+}
+System.out.println(count);
+// 15 and 20 → 2 values > 10 → Output: 2
+
+IUC 4. If array is: 3, 6, 9 — print sum of all values using loop
+
+int[] arr = {3, 6, 9};
+int sum = 0;
+for (int i = 0; i < 3; i++) {
+    sum += arr[i];
+}
+System.out.println(sum);
+// 3 + 6 + 9 = 18 → Output: 18
+
+IUC 5. Create array of 4 values. Replace all values with 0 (manually, no loop). Then print all
+
+int[] arr = {7, 8, 9, 10};
+arr[0] = 0;
+arr[1] = 0;
+arr[2] = 0;
+arr[3] = 0;
+System.out.println(arr[0]);
+System.out.println(arr[1]);
+System.out.println(arr[2]);
+System.out.println(arr[3]);
+// Output: 0 0 0 0
