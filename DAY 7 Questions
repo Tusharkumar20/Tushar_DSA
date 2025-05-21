@@ -1,0 +1,61 @@
+1. Create an array with values: 5, 10, 15, 20, 25
+Now print only those values that are at even index
+Hint: Use loop and check if index i % 2 == 0
+
+2. You are given an array: 3, 6, 9, 12
+Imagine this as the “3 times table”
+Change last value to 15 and print the array
+Hint: arr[3] = 15
+
+3. Fill an array of size 5 with same value 1
+Now count how many 1s are there
+Hint: Set all to 1, use a loop to count
+
+4. Store values: 1, 3, 5, 7, 9
+Print sum of only the first 3 odd numbers
+Think: arr[0] + arr[1] + arr[2]
+
+5. Store values: 2, 4, 6, 8, 10
+Print difference between last and first
+Hint: arr[4] - arr[0]
+
+6. You are given an array of size 4: All values are 0.
+Change every alternate value to 1
+So final array becomes: 1, 0, 1, 0
+Hint: arr[0]=1; arr[2]=1;
+
+7. In an array: 2, 4, 6, 8
+Swap second and third value, then print all
+Hint: Use temp variable to swap arr[1] and arr[2]
+
+8. Store values: 1, 4, 9, 16, 25 → Looks familiar?
+Yes! These are squares
+Print only values that are more than 10
+Hint: Use if condition in loop
+
+9. Given array: 5, 10, 15, 20, 25
+Print “Middle!” if the value at index 2 is greater than 10
+Hint: if (arr[2] > 10)
+
+10. What’s the mistake in this code?
+
+int[] arr = {1, 2, 3, 4};
+System.out.println(arr[4]);
+Think: Is index 4 valid? What will this give?
+
+IUC – Extra Practice (Day 8)
+
+IUC 1. Create array: 1, 2, 3, 4, 5 → Print values in reverse order
+Hint: Start loop from i = 4 to 0
+
+IUC 2. You are given: 10, 20, 30, 40 → Replace all with their half
+Hint: arr[i] = arr[i] / 2 in loop
+
+IUC 3. Count how many values are multiples of 4 in: 4, 6, 8, 9, 12
+Hint: if (arr[i] % 4 == 0)
+
+IUC 4. Store 3 values: 2, 3, 5 → Multiply all and print result
+Hint: Use product = arr[0] * arr[1] * arr[2]
+
+IUC 5. Store values: 1, 2, 3, 4, 5 → Make all values 0 without loop
+Hint: Do it manually: arr[0] = 0; arr[1] = 0; …
