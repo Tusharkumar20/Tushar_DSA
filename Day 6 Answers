@@ -1,0 +1,154 @@
+1. Print all even values using loop
+
+int[] arr = {2, 4, 6, 8, 10};
+for (int i = 0; i < 5; i++) {
+    if (arr[i] % 2 == 0) {
+        System.out.println(arr[i]);
+    }
+}
+// Output: 2 4 6 8 10 (all even)
+
+2. Print last value using arr[arr.length - 1]                                        
+  
+int[] arr = {5, 10, 15, 20};
+System.out.println(arr[arr.length - 1]);
+// Output: 20
+
+3. Print “Increasing” if first value is smaller than second
+
+int[] arr = {3, 6, 9};
+if (arr[0] < arr[1]) {
+    System.out.println("Increasing");
+}
+// 3 < 6 → Output: Increasing
+
+4. Count how many values are equal to 5
+
+int[] arr = {5, 1, 5, 2, 5};
+int count = 0;
+for (int i = 0; i < 5; i++) {
+    if (arr[i] == 5) {
+        count++;
+    }
+}
+System.out.println(count);
+// Output: 3
+
+5. Set all 4 values to 7 and print
+
+int[] arr = new int[4];
+arr[0] = 7;
+arr[1] = 7;
+arr[2] = 7;
+arr[3] = 7;
+
+for (int i = 0; i < 4; i++) {
+    System.out.println(arr[i]);
+}
+// Output: 7 7 7 7
+
+6. Print sum of values at even indexes
+
+int[] arr = {3, 6, 9, 12};
+int sum = arr[0] + arr[2];
+System.out.println(sum);
+// 3 + 9 = 12 → Output: 12
+
+7. Print "OK" if first + last == 15
+
+int[] arr = {6, 2, 5, 9};
+if (arr[0] + arr[3] == 15) {
+    System.out.println("OK");
+}
+// 6 + 9 = 15 → Output: OK
+
+8. Print smallest value from array
+
+int[] arr = {9, 2, 6, 4};
+int min = arr[0];
+for (int i = 1; i < 4; i++) {
+    if (arr[i] < min) {
+        min = arr[i];
+    }
+}
+System.out.println(min);
+// Output: 2
+
+9. Replace all with 100 and print
+
+int[] arr = {10, 20, 30};
+arr[0] = 100;
+arr[1] = 100;
+arr[2] = 100;
+
+System.out.println(arr[0]);
+System.out.println(arr[1]);
+System.out.println(arr[2]);
+// Output: 100 100 100
+
+10. Print second largest in array
+
+int[] arr = {4, 8, 6};
+int max = Math.max(arr[0], Math.max(arr[1], arr[2]));
+int secondMax = Integer.MIN_VALUE;
+
+for (int i = 0; i < 3; i++) {
+    if (arr[i] != max && arr[i] > secondMax) {
+        secondMax = arr[i];
+    }
+}
+System.out.println(secondMax);
+// max = 8 → second max = 6 → Output: 6
+
+IUC – Extra Practice Answers
+IUC 1: Print values > 10
+
+int[] arr = {3, 15, 7, 20, 5};
+for (int i = 0; i < 5; i++) {
+    if (arr[i] > 10) {
+        System.out.println(arr[i]);
+    }
+}
+// Output: 15, 20
+
+IUC 2: Replace middle two with 0
+
+int[] arr = {5, 10, 15, 20};
+arr[1] = 0;
+arr[2] = 0;
+
+for (int i = 0; i < 4; i++) {
+    System.out.println(arr[i]);
+}
+// Output: 5 0 0 20
+
+IUC 3: Sum values ≠ 5
+
+int[] arr = {5, 3, 5, 2};
+int sum = 0;
+for (int i = 0; i < 4; i++) {
+    if (arr[i] != 5) {
+        sum += arr[i];
+    }
+}
+System.out.println(sum);
+// 3 + 2 = 5 → Output: 5
+
+IUC 4: Print values at odd indexes
+
+int[] arr = {11, 22, 33, 44};
+System.out.println(arr[1]);
+System.out.println(arr[3]);
+// Output: 22, 44
+
+IUC 5: Count values divisible by 3
+
+int[] arr = {3, 6, 8, 9, 10};
+int count = 0;
+for (int i = 0; i < 5; i++) {
+    if (arr[i] % 3 == 0) {
+        count++;
+    }
+}
+System.out.println(count);
+// 3, 6, 9 → count = 3 → Output: 3
