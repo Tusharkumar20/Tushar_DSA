@@ -1,0 +1,93 @@
+Day 8 answers
+1. Print the ASCII value of character 'A'
+
+char ch = 'A';
+System.out.println((int) ch);
+// Output: 65
+
+2. Print the character for ASCII value 66
+
+int n = 66;
+System.out.println((char) n);
+// Output: B
+
+3. What will this print?
+
+char ch = 'a';
+System.out.println((int) ch);
+// Output: 97
+
+4. What is the output?
+
+System.out.println((char) 100);
+// Output: d
+
+5.Store a letter in a variable and print its ASCII
+
+char x = 'Z';
+System.out.println((int) x);
+// Output: 90
+
+6.Store a number and convert it to a character
+
+int x = 72;
+System.out.println((char) x);
+// Output: H
+
+7.Guess the output
+
+char c = 'b';
+int num = c + 1;
+System.out.println(num);
+// Output: 99
+
+8.Print character that comes after 'C'
+
+char c = 'C';
+c = (char)(c + 1);
+System.out.println(c);
+// Output: D
+
+9.What happens when you subtract two characters?
+
+char a = 'e';
+char b = 'a';
+System.out.println(a - b);
+// Output: 4
+
+10.Print characters from 'A' to 'E' using a loop
+
+for (char ch = 'A'; ch <= 'E'; ch++) {
+    System.out.println(ch);
+}
+// Output: A B C D E (each on new line)
+
+IUC – If You Can Practice (5 Questions)
+
+1.Print ASCII of 'X'
+
+System.out.println((int) 'X');
+// Output: 88
+
+2.Print char for value 120
+
+System.out.println((char) 120);
+// Output: x
+
+3.Store 'm' and add 2
+
+char c = 'm';
+System.out.println((char)(c + 2));
+// Output: o
+
+4.Print all lowercase letters using a loop
+
+for (char ch = 'a'; ch <= 'z'; ch++) {
+    System.out.print(ch + " ");
+}
+// Output: a b c d ... z
+
+5. What is the difference in ASCII between 'z' and 'a'?
+
+System.out.println('z' - 'a');
+// Output: 25
