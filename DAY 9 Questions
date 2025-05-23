@@ -1,0 +1,41 @@
+jabbhi char se comparision karte hai single quote ka istemal karte hai '' aur string me double ""
+
+1. Print the ASCII value of the first character in the string "Hello".
+Use String s = "Hello"; then System.out.print(s.charAt(0)); 
+s.charAt() function very important
+
+2. What is the third character in the string "Elephant"?
+
+3. Check if the first character of the string "Java" has an ASCII value greater than 'H'.
+
+4. Print the ASCII value of the last character in the string "School".
+
+5. Find the difference between ASCII values of the first and second characters in "Cat".
+
+6. If char ch = 'g';, print the next character using ASCII logic.
+
+7. Given a string "Code", print all characters one by one using a loop.
+
+8. Print only those characters from the string "Zoo" whose ASCII value is greater than 80.
+
+9. Print "Yes" if the character at index 1 in "Apple" is a vowel.
+if(s.charAt(0) =='A' || s.charAt(0) == 'E' || s.charAt(0) == 'I' || .....){ 
+      System.out.print("Yes");
+}
+
+10. Given a character 'D', convert it to lowercase using ASCII value only.
+ascii value of D = 65 and d = 97 
+just do char ch = D
+ch = (char)(ch + 32);
+System.out.print(ch);
+
+IUC – If You Can Practice (Level 2) – 5 Questions
+1. Print the sum of ASCII values of all characters in the string "Hi".
+
+2. Compare the first character of "Ball" and "Cat" — print the one with the higher ASCII value.
+
+3. From the string "AbCDeF", print all uppercase characters.
+
+4. Check if the character at index 2 in "Mango" is 'n'.
+
+5. Convert all characters of the string "abc" to uppercase using ASCII value logic (without built-in methods).
