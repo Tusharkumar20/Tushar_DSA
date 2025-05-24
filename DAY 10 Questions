@@ -1,0 +1,52 @@
+Day 10 – ASCII Value with Strings (Level 3)
+
+Concepts used: ASCII values, charAt(), loops, if conditions with chars sab kuch aap ne padh rakha hai very easy agar aap ne akhri ke quetions kar rakhe hai to 
+agar problem ho to please ask me and and try to do previous quetions again
+
+1. Print the ASCII value of the last character in the string "Laptop"
+Hint: Use print(s.charAt(s.length() - 1));
+
+2. Print "Yes" if the first character of the string is in lowercase
+Hint: lowercase means ASCII between 97 and 122 or use 
+if (ch >= 'a' && ch <= 'z') print("yes"); agla quetions same tarike se hoga but useme (ch >='A' and ch<='Z') hoga understood 
+
+3. Check if first character in "Robot" is between 'A' and 'Z'
+Hint: Use char ch = s.charAt(0) and compare using ASCII
+
+4. From "Tiger", print only the characters whose ASCII is greater than 100
+Hint: Use a loop, compare s.charAt(i) > 100
+
+5. Count how many uppercase letters are there in "GiraFFe"
+Hint: Uppercase means ASCII between 65 and 90
+
+6. Convert each lowercase letter in "hi" to uppercase using ASCII
+Hint: ch = (char)(ch - 32)
+
+7. Given string = "Good", print the sum of ASCII values of first and last characters
+Hint: Add s.charAt(0) and s.charAt(s.length() - 1)
+
+8. Given string = "Zero", print all characters with their ASCII values side-by-side
+Hint: Loop through string and print ch + " = " + (int)ch
+
+9. Print all vowels in the string "Education" using ASCII conditions only
+Hint: check if char matches ASCII values of A, E, I, O, U, a, e, i, o, u
+
+10. From the string "Smart", find the character with the highest ASCII value
+Hint: Track maxChar and compare using if condition
+
+IUC – If You Can (5 String + ASCII Value Challenges)
+
+IUC 1. Print total ASCII sum of the string "Code"
+Hint: Use loop, add each s.charAt(i)
+
+IUC 2. If the string is "aBcD", convert only the lowercase to uppercase (ASCII method)
+Hint: Check if ch >= 'a' && ch <= 'z', then ch = (char)(ch - 32)
+
+IUC 3. From "AirPlane", count how many characters have ASCII > 90
+Hint: Use a counter inside a loop
+
+IUC 4. Print all characters from "Hello123" that are not alphabets using ASCII
+Hint: Use if condition to skip values between 65–90 and 97–122
+
+IUC 5. From "APPLE", subtract 1 from ASCII of each char and print the new char
+Hint: System.out.print((char)(ch - 1)) in loop
