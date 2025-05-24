@@ -1,0 +1,122 @@
+1.Print the ASCII value of the first character in the string "Hello"
+
+String s = "Hello";
+System.out.println((int) s.charAt(0));
+// Output: 72 (ASCII of 'H')
+
+2.What is the third character in the string "Elephant"?
+
+String s = "Elephant";
+System.out.println(s.charAt(2));
+// Output: e
+
+3.Check if the first character of the string "Java" has an ASCII value greater than 'H'
+
+String s = "Java";
+if (s.charAt(0) > 'H') {
+    System.out.println("Yes");
+} else {
+    System.out.println("No");
+}
+// 'J' > 'H' → 74 > 72 → Yes
+
+4.Print the ASCII value of the last character in the string "School"
+
+String s = "School";
+System.out.println((int) s.charAt(s.length() - 1));
+// Output: 108 (ASCII of 'l')
+
+5.Find the difference between ASCII values of the first and second characters in "Cat"
+
+String s = "Cat";
+System.out.println(s.charAt(0) - s.charAt(1));
+// 'C' = 67, 'a' = 97 → 67 - 97 = -30
+
+6.If char ch = 'g';, print the next character using ASCII logic
+
+char ch = 'g';
+ch = (char)(ch + 1);
+System.out.println(ch);
+// Output: h
+
+7.Given a string "Code", print all characters one by one using a loop
+
+String s = "Code";
+for (int i = 0; i < s.length(); i++) {
+    System.out.println(s.charAt(i));
+}
+// Output: C, o, d, e (each on new line)
+
+8.Print only those characters from the string "Zoo" whose ASCII value is greater than 80
+
+String s = "Zoo";
+for (int i = 0; i < s.length(); i++) {
+    if ((int) s.charAt(i) > 80) {
+        System.out.println(s.charAt(i));
+    }
+}
+// Output: Z, o, o
+
+9.Print "Yes" if the character at index 1 in "Apple" is a vowel
+
+String s = "Apple";
+char ch = s.charAt(1);
+if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+    ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+    System.out.println("Yes");
+}
+// 'p' is not a vowel → No output
+
+10.Given a character 'D', convert it to lowercase using ASCII value only
+
+char ch = 'D';
+ch = (char)(ch + 32);
+System.out.println(ch);
+// Output: d
+
+IUC – If You Can (Level 2) – 5 Questions
+
+1.Print the sum of ASCII values of all characters in the string "Hi"
+
+String s = "Hi";
+int sum = 0;
+for (int i = 0; i < s.length(); i++) {
+    sum += s.charAt(i);
+}
+System.out.println(sum);
+// Output: 72 (H) + 105 (i) = 177
+
+2.Compare the first character of "Ball" and "Cat" — print the one with the higher ASCII value
+
+char a = "Ball".charAt(0); // B = 66
+char b = "Cat".charAt(0);  // C = 67
+System.out.println(a > b ? a : b);
+// Output: C
+
+3.From the string "AbCDeF", print all uppercase characters
+
+String s = "AbCDeF";
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    if (ch >= 'A' && ch <= 'Z') {
+        System.out.print(ch + " ");
+    }
+}
+// Output: A C D F
+
+4.Check if the character at index 2 in "Mango" is 'n'
+
+String s = "Mango";
+if (s.charAt(2) == 'n') {
+    System.out.println("Yes");
+}
+// Output: Yes
+
+5.Convert all characters of the string "abc" to uppercase using ASCII value logic
+
+String s = "abc";
+for (int i = 0; i < s.length(); i++) {
+    char ch = (char)(s.charAt(i) - 32);
+    System.out.print(ch);
+}
+// Output: ABC
