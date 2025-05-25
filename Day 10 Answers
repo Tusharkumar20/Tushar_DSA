@@ -1,0 +1,139 @@
+1. ASCII value of last character in "Laptop"
+
+String s = "Laptop";
+System.out.println((int) s.charAt(s.length() - 1)); // 'p' → 112
+
+2. Print "Yes" if first character is lowercase
+
+String s = "laptop";
+char ch = s.charAt(0);
+if (ch >= 'a' && ch <= 'z') {
+    System.out.println("Yes");
+}
+
+3. Check if first character of "Robot" is uppercase
+
+String s = "Robot";
+char ch = s.charAt(0);
+if (ch >= 'A' && ch <= 'Z') {
+    System.out.println("Yes");
+}
+
+4. From "Tiger", print characters with ASCII > 100
+
+String s = "Tiger";
+for (int i = 0; i < s.length(); i++) {
+    if (s.charAt(i) > 100) {
+        System.out.println(s.charAt(i));
+    }
+}
+
+5. Count uppercase letters in "GiraFFe"
+
+String s = "GiraFFe";
+int count = 0;
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    if (ch >= 'A' && ch <= 'Z') {
+        count++;
+    }
+}
+System.out.println(count);
+
+6. Convert "hi" to uppercase using ASCII
+
+String s = "hi";
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    if (ch >= 'a' && ch <= 'z') {
+        ch = (char)(ch - 32);
+    }
+    System.out.print(ch);
+}
+
+7. ASCII sum of first and last char in "Good"
+
+String s = "Good";
+int sum = s.charAt(0) + s.charAt(s.length() - 1);
+System.out.println(sum);
+
+8. Print all characters of "Zero" with ASCII
+
+String s = "Zero";
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    System.out.println(ch + " = " + (int)ch);
+}
+
+9. Print vowels from "Education" (ASCII method)
+
+String s = "Education";
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    int ascii = (int) ch;
+    if (ascii == 65 || ascii == 69 || ascii == 73 || ascii == 79 || ascii == 85 ||
+        ascii == 97 || ascii == 101 || ascii == 105 || ascii == 111 || ascii == 117) {
+        System.out.println(ch);
+    }
+}
+
+10. Highest ASCII char in "Smart"
+
+String s = "Smart";
+char maxChar = s.charAt(0);
+for (int i = 1; i < s.length(); i++) {
+    if (s.charAt(i) > maxChar) {
+        maxChar = s.charAt(i);
+    }
+}
+System.out.println(maxChar);
+
+IUC – If You Can Practice – Solutions
+IUC 1. ASCII sum of "Code"
+
+String s = "Code";
+int sum = 0;
+for (int i = 0; i < s.length(); i++) {
+    sum += s.charAt(i);
+}
+System.out.println(sum);
+
+IUC 2. Convert only lowercase to uppercase in "aBcD"
+
+String s = "aBcD";
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    if (ch >= 'a' && ch <= 'z') {
+        ch = (char)(ch - 32);
+    }
+    System.out.print(ch);
+}
+
+IUC 3. Count characters with ASCII > 90 in "AirPlane"
+
+String s = "AirPlane";
+int count = 0;
+for (int i = 0; i < s.length(); i++) {
+    if (s.charAt(i) > 90) {
+        count++;
+    }
+}
+System.out.println(count);
+
+IUC 4. Print non-alphabet characters from "Hello123"
+
+String s = "Hello123";
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    if (!((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))) {
+        System.out.println(ch);
+    }
+}
+
+IUC 5. Subtract 1 from ASCII and print for "APPLE"
+
+String s = "APPLE";
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    System.out.print((char)(ch - 1));
+}
