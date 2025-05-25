@@ -1,0 +1,52 @@
+hamne already array ke quetions kar rakhe hai ab ham array with char karenge 
+agar koi problem ho to ascii values ki table khol ke uetions kare
+
+1. Create a char array with letters: 'a', 'b', 'c' and print the first character.
+Hint: arr[0]
+
+2. Create char array: 'x', 'y', 'z'. Print the second character.
+Hint: arr[1]
+
+3. What will this print?
+
+char[] arr = {'p', 'q', 'r'};
+System.out.println(arr[2]);
+Think: arr[2] means 3rd letter
+
+4. Create a char array of size 3. Fill it with 'A', 'B', 'C'. Print all values one by one.
+Hint: Print arr[0], arr[1], arr[2]
+
+5. Store: 'J', 'A', 'V', 'A' → Print the third letter.
+Hint: arr[2]
+
+6. What is the length of this array: {'h', 'i', '!'}?
+Hint: arr.length
+
+7. Create array: {'a', 'b', 'c', 'd'} → Print first and last letter.
+Hint: arr[0] and arr[3]
+
+8. Can we use a loop to print all characters of: {'X', 'Y', 'Z'}? Try it.
+Hint: for (int i = 0; i < arr.length; i++)
+
+9. Print only the middle character from this array: {'L', 'M', 'N'}
+Hint: Middle of 3 → index 1
+
+10. What will this output?
+
+char[] arr = {'A', 'B', 'C'};
+System.out.println((int) arr[0]);
+Hint: Prints ASCII of 'A'
+
+IUC – If You Can (Char Array Basics) by the way very easy IUC
+
+IUC 1. Print all characters of {'a', 'b', 'c', 'd', 'e'} using loop
+
+IUC 2. Fill array of size 4 with 'Z', then print all
+
+IUC 3. Given: {'h', 'i'} — Print both characters in one line
+Hint: System.out.print(arr[0]); System.out.print(arr[1]);
+
+IUC 4. Check if first and second character in {'a', 'a'} are same
+
+IUC 5. Create char array: {'A', 'B', 'C', 'D'}. Print last character only
+Hint: arr[3] or arr[arr.length - 1]
