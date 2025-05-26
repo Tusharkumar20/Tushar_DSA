@@ -1,0 +1,54 @@
+Day 12 – Char Array + Easy Logic Building                                                            
+Concept Focus: char[], for loops, if conditions, ASCII logic
+Confidence + Pattern Recognition + Basic Thinking (basically bahut hard nahi hai bas questions thoda coding ke confidence bhadane ke liye hai)                                                            
+  
+Total: 10 main questions + 5 IUC (If You Can)
+
+Main Questions – Easy Logic with Char Arrays
+
+1. Print all characters from the array using a loop:
+char[] arr = {'H', 'e', 'l', 'l', 'o'};
+
+2. Count how many vowels are in this array:
+char[] arr = {'a', 'e', 'b', 'c', 'o'};
+
+3. Print only the uppercase letters from this array:
+char[] arr = {'P', 'r', 'O', 'j', 'E', 'c', 'T'};
+
+4. Check if the array contains the letter 'z':
+char[] arr = {'x', 'y', 'a', 'b', 'c'};
+
+5. Print the ASCII value of each character in this array:
+char[] arr = {'A', 'B', 'C'};
+
+6. Print characters from the array that have ASCII value greater than 100:
+char[] arr = {'d', 'e', 'f', 'z', 'm'};
+
+7. Count how many lowercase letters are in this array:
+char[] arr = {'H', 'a', 'B', 'c', 'd'};
+
+8. Print only those characters that are not vowels:
+char[] arr = {'A', 'b', 'e', 'F', 'O'};
+
+9. Replace every lowercase letter with its uppercase using ASCII logic:
+char[] arr = {'a', 'B', 'c', 'D', 'e'};
+
+10. Print characters at even indexes only:
+char[] arr = {'C', 'O', 'D', 'E', 'S'};
+
+IUC – If You Can (5 Questions)
+
+1. From this array, print all letters in reverse:
+char[] arr = {'h', 'e', 'l', 'l', 'o'};
+
+2. Count how many characters have ASCII value less than 90:
+char[] arr = {'A', 'z', 'Q', 'b', 'Y'};
+
+3. Check if first and last characters are the same:
+char[] arr = {'a', 'b', 'c', 'a'};
+
+4. Print all characters and mention if they are upper or lower:
+char[] arr = {'A', 'b', 'C', 'd'};
+
+5. From this array, print only vowels in uppercase using ASCII logic:
+char[] arr = {'a', 'e', 'i', 'b', 'u'};
