@@ -1,0 +1,42 @@
+10 Easy Questions
+
+1. Convert the string "dog" into a char array and print the first character.
+Hint:String s = "Dog"; char[] ch = s.toCharArray(); print(char[0]);
+
+2. Convert "apple" to a char array and print all characters using a loop.
+
+3. What will this print?
+
+String s = "Sun";
+char[] arr = s.toCharArray();
+System.out.println(arr[1]);
+
+4. Convert "Mango" into char array and print its length.
+
+5. Convert "Ball" to char array and print the last character.
+
+6. Print each character of "King" on a new line using a loop.
+
+7. Store string "Code", convert it to char[], and print second and third characters.
+
+8. Convert "Java" into char array and print it in reverse order.
+(Hint: Start loop from arr.length - 1)
+
+9. Given: "Zoo", print only the first and last character using char array.
+
+10. Convert "Hello" to char array. Print characters only at even indexes.
+
+IUC – If You Can (Light Challenges)
+
+Keep simple, but help develop curiosity.(agar nahi aata fir bhi galat try karna in walo ko)
+
+1. Convert "abcde" to char array and print every character with its ASCII value.
+
+2. Convert "Hi" to char array and print both characters on the same line (without space).
+
+3. Convert "Code123" to char array and print only characters that are not digits.
+(Hint: Ignore chars with ASCII 48–57)
+
+4. From "Smile", print only characters that are vowels.
+
+5. Print "Yes" if the first and last characters of "Radar" are the same.
