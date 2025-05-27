@@ -1,0 +1,139 @@
+1. Print all characters from the array using a loop
+
+char[] arr = {'H', 'e', 'l', 'l', 'o'};
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i]);
+}
+
+2. Count how many vowels are in this array
+
+char[] arr = {'a', 'e', 'b', 'c', 'o'};
+int count = 0;
+for (char ch : arr) {
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        count++;
+    }
+}
+System.out.println(count); // Output: 3
+
+3. Print only the uppercase letters
+
+char[] arr = {'P', 'r', 'O', 'j', 'E', 'c', 'T'};
+for (char ch : arr) {
+    if (ch >= 'A' && ch <= 'Z') {
+        System.out.println(ch);
+    }
+}
+
+4. Check if array contains 'z'
+
+char[] arr = {'x', 'y', 'a', 'b', 'c'};
+boolean found = false;
+for (char ch : arr) {
+    if (ch == 'z') {
+        found = true;
+        break;
+    }
+}
+System.out.println(found); // Output: false
+
+5. Print ASCII values of each character
+
+char[] arr = {'A', 'B', 'C'};
+for (char ch : arr) {
+    System.out.println((int) ch);
+}
+
+6. Print characters with ASCII > 100
+
+char[] arr = {'d', 'e', 'f', 'z', 'm'};
+for (char ch : arr) {
+    if ((int) ch > 100) {
+        System.out.println(ch);
+    }
+}
+
+7. Count lowercase letters
+
+char[] arr = {'H', 'a', 'B', 'c', 'd'};
+int count = 0;
+for (char ch : arr) {
+    if (ch >= 'a' && ch <= 'z') {
+        count++;
+    }
+}
+System.out.println(count); // Output: 3
+
+8. Print characters that are not vowels
+
+char[] arr = {'A', 'b', 'e', 'F', 'O'};
+for (char ch : arr) {
+    if (!(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'
+       || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')) {
+        System.out.println(ch);
+    }
+}
+
+9. Replace lowercase with uppercase using ASCII
+
+char[] arr = {'a', 'B', 'c', 'D', 'e'};
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] >= 'a' && arr[i] <= 'z') {
+        arr[i] = (char)(arr[i] - 32);
+    }
+    System.out.println(arr[i]);
+}
+
+10. Print characters at even indexes only
+
+char[] arr = {'C', 'O', 'D', 'E', 'S'};
+for (int i = 0; i < arr.length; i++) {
+    if (i % 2 == 0) {
+        System.out.println(arr[i]);
+    }
+}
+
+IUC – If You Can: Answers
+
+1. Print all letters in reverse
+
+char[] arr = {'h', 'e', 'l', 'l', 'o'};
+for (int i = arr.length - 1; i >= 0; i--) {
+    System.out.println(arr[i]);
+}
+
+2. Count chars with ASCII < 90
+
+char[] arr = {'A', 'z', 'Q', 'b', 'Y'};
+int count = 0;
+for (char ch : arr) {
+    if ((int) ch < 90) {
+        count++;
+    }
+}
+System.out.println(count); // Output: 3
+
+3. Check if first and last chars are same
+
+char[] arr = {'a', 'b', 'c', 'a'};
+System.out.println(arr[0] == arr[arr.length - 1]); // Output: true
+
+4. Print each char and say upper/lower
+
+char[] arr = {'A', 'b', 'C', 'd'};
+for (char ch : arr) {
+    if (ch >= 'A' && ch <= 'Z') {
+        System.out.println(ch + " is uppercase");
+    } else if (ch >= 'a' && ch <= 'z') {
+        System.out.println(ch + " is lowercase");
+    }
+}
+
+5. Print only vowels in uppercase using ASCII
+
+char[] arr = {'a', 'e', 'i', 'b', 'u'};
+for (char ch : arr) {
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        System.out.println((char)(ch - 32));
+    }
+}
