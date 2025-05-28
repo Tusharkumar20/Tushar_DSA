@@ -1,0 +1,56 @@
+Ice Cream Style Coding 🍦 (Day 14)
+Char Array + Character Conditions (Confidence Focus)
+by the way "windows + fullstop" se emojis likh sakto ho
+
+Question 1:
+Ek string hai "Ice". Use char array me convert karo aur pehla character print karo.
+Hint: s.toCharArray() ka use karo.
+
+Question 2:
+String "Lamp" ka last character print karo using charAt() function.
+
+Question 3:
+Ek string hai "Milk". Uska second character print karo using array indexing.
+Hint: pehle string ko char array me convert karo.
+
+Question 4:
+Ek string "Java" ko char array me convert karo aur har character ko ek-ek line me print karo using loop.
+
+Question 5:
+String "Code" ka ASCII value print karo for har character.
+Hint: (int) ch se ASCII milega.
+
+Question 6:
+Check karo kya "Sky" ka pehla character uppercase hai.
+Hint: if (ch >= 'A' && ch <= 'Z') se check karo.
+
+Question 7:
+String "Tiger" me sirf vowels print karo using loop.
+Hint: if (ch == 'a' || ch == 'e' ... )
+
+Question 8:
+String "Box" ka har character print karo uska ASCII ke saath. Format: B = 66
+
+Question 9:
+Ek string "Cool" lo aur uska second aur third character exchange (swap) karo, fir print karo.
+
+Question 10:
+String "data" ke sabhi characters ko uppercase banakar print karo using ASCII logic.
+Hint: ch = (char)(ch - 32) ka use karo agar ch lowercase hai.
+
+IUC (If You Can – Practice) 
+
+IUC 1:
+String "Hello" ko char array me convert karo aur uska length print karo.
+
+IUC 2:
+String "Air" ke characters ko reverse order me print karo.
+
+IUC 3:
+String "abc" ke har character ka ASCII value + 1 karke new character print karo.
+
+IUC 4:
+String "JAVA" ke last do characters ko alag se print karo.
+
+IUC 5:
+Check karo kya "Elephant" ka third character lowercase letter hai.
