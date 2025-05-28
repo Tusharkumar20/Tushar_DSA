@@ -1,0 +1,117 @@
+Day 13 – Answers (String to char[])
+
+10 Easy Questions
+
+1. Convert the string "dog" into a char array and print the first character.
+
+String s = "dog";
+char[] arr = s.toCharArray();
+System.out.println(arr[0]); // d
+
+2. Convert "apple" to a char array and print all characters using a loop.
+
+String s = "apple";
+char[] arr = s.toCharArray();
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i]);
+}
+
+3. What will this print?
+
+String s = "Sun";
+char[] arr = s.toCharArray();
+System.out.println(arr[1]); // u
+
+4. Convert "Mango" into char array and print its length.
+
+String s = "Mango";
+char[] arr = s.toCharArray();
+System.out.println(arr.length); // 5
+
+5. Convert "Ball" to char array and print the last character.
+
+String s = "Ball";
+char[] arr = s.toCharArray();
+System.out.println(arr[arr.length - 1]); // l
+
+6. Print each character of "King" on a new line using a loop.
+
+String s = "King";
+char[] arr = s.toCharArray();
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i]);
+}
+
+7. Store string "Code", convert it to char[], and print second and third characters.
+
+String s = "Code";
+char[] arr = s.toCharArray();
+System.out.println(arr[1]); // o
+System.out.println(arr[2]); // d
+
+8. Convert "Java" into char array and print it in reverse order.
+
+String s = "Java";
+char[] arr = s.toCharArray();
+for (int i = arr.length - 1; i >= 0; i--) {
+    System.out.println(arr[i]);
+}
+
+9. Given: "Zoo", print only the first and last character using char array.
+
+String s = "Zoo";
+char[] arr = s.toCharArray();
+System.out.println(arr[0]); // Z
+System.out.println(arr[arr.length - 1]); // o
+
+10. Convert "Hello" to char array. Print characters only at even indexes.
+
+String s = "Hello";
+char[] arr = s.toCharArray();
+for (int i = 0; i < arr.length; i += 2) {
+    System.out.println(arr[i]); // H, l, o
+}
+
+IUC – If You Can (Light Challenges)
+1. Convert "abcde" to char array and print every character with its ASCII value.
+
+String s = "abcde";
+char[] arr = s.toCharArray();
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i] + " = " + (int)arr[i]);
+}
+
+2. Convert "Hi" to char array and print both characters on the same line (without space).
+
+String s = "Hi";
+char[] arr = s.toCharArray();
+System.out.print(arr[0]);
+System.out.print(arr[1]); // Hi
+
+3. Convert "Code123" to char array and print only characters that are not digits.
+
+String s = "Code123";
+char[] arr = s.toCharArray();
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] < '0' || arr[i] > '9') {
+        System.out.print(arr[i]); // Code
+    }
+}
+
+4. From "Smile", print only characters that are vowels.
+
+String s = "Smile";
+char[] arr = s.toCharArray();
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' || arr[i] == 'o' || arr[i] == 'u') {
+        System.out.println(arr[i]); // i, e
+    }
+}
+
+5. Print "Yes" if the first and last characters of "Radar" are the same.
+
+String s = "Radar";
+char[] arr = s.toCharArray();
+if (arr[0] == arr[arr.length - 1]) {
+    System.out.println("Yes");
+}
