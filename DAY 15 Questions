@@ -1,0 +1,44 @@
+Day 15 – Light Logic Building (int array, loops, variables only)                                                                                
+  
+Q1: Ek array hai {2, 4, 6}. Har element ko 3 se add karke print karo.
+Hint: System.out.println(arr[i] + 3);
+
+Q2: Ek array {10, 20, 30, 40} ke pehle 2 elements ka difference print karo.
+Hint: arr[1] - arr[0]
+
+Q3: Ek array {5, 10, 15} ke elements ka sum nikalo bina loop ke.
+Hint: Direct add karo: arr[0] + arr[1] + arr[2]
+
+Q4: Array {1, 2, 3, 4} me kitne elements hai? Length print karo.
+Hint: arr.length
+
+Q5: Ek array hai {8, 6, 4}. Sabhi elements ka total sum print karo.
+Hint: loop + sum variable
+
+Q6: Array {9, 3, 7} ka sabse bada number print karo.
+Hint: max variable + loop
+
+Q7: Array {5, 10, 15, 20} me sirf even numbers print karo.
+Hint: if (arr[i] % 2 == 0)
+
+Q8: Array {1, 3, 5, 7, 9} ke har element me +1 karke print karo.
+
+Q9: Array {100, 200, 300} ko reverse order me print karo.
+Hint: i = arr.length - 1 se loop start karo
+
+Q10: Array {2, 4, 6, 8} ka average print karo.
+Hint: sum nikalo → sum / arr.length
+
+💪 IUC (If You Can – Practice Zone)
+IUC 1: Ek array banao with 4 values aur uska sabse chhota number print karo.
+Hint: min variable + loop
+
+IUC 2: Array {1, 2, 3, 4, 5} me sirf odd numbers print karo.
+Hint: if (arr[i] % 2 != 0)
+
+IUC 3: Array {10, 20, 30, 40} ke pehle do elements ka sum print karo.
+
+IUC 4: Array {2, 3, 4} me har value ko 2 se multiply karke print karo.
+
+IUC 5: Array {3, 6, 9} ke har element ka square print karo.
+Hint: arr[i] * arr[i]
