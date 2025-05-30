@@ -1,0 +1,33 @@
+Day 16 – Questions (Light Logic Building, int Array, Loops, and Simple Conditions)                                                                                                     
+
+Question 1: Ek int array lo aur uske saare even numbers ko print karo.
+
+Question 2: Ek int array lo aur usme se odd numbers ko print karo.
+
+Question 3: Ek int array me check karo kya 5 number hai ya nahi, agar ho toh "Mil gaya" print karo.
+
+Question 4: Ek int array lo aur uska maximum element print karo.
+
+Question 5: Ek int array lo aur uska minimum element print karo.
+
+Question 6: Ek int array lo aur uske sabhi numbers ko 10 se bada karke print karo.
+
+Question 7: Ek int array lo aur uske sabhi numbers ka sum print karo.
+
+Question 8: Ek int array lo aur uske elements ko ulta print karo (reverse order me).
+
+Question 9: Ek int array me pehla negative number print karo.
+
+Question 10: Ek int array lo aur usme se sirf woh elements print karo jo 50 se chhote hain.
+
+IUC (If You Can – Practice) 💪
+
+IUC 1: Ek int array lo aur usme se sirf even numbers ka sum print karo.
+
+IUC 2: Ek int array lo aur count karo kitne numbers odd hain.
+
+IUC 3: Ek int array lo aur usme se sabhi numbers ko 2 se multiply karke print karo.
+
+IUC 4: Ek int array lo aur check karo kya saare numbers positive hain.
+
+IUC 5: Ek int array lo aur uske first aur last element ka difference print karo.
