@@ -1,0 +1,108 @@
+Logic building level 1 Answers 
+
+Question 1: Ek int array banayo {1, 2, 3} aur second element ko print karo.
+
+int[] arr = {1, 2, 3};
+System.out.println(arr[1]);  // Output: 2
+
+Question 2: int array {10, 20, 30} me se last value print karo.
+
+int[] arr = {10, 20, 30};
+System.out.println(arr[arr.length - 1]);  // Output: 30
+
+Question 3: Ek int array {5, 10, 15} ke saare elements ko ek line me print karo using loop.
+
+int[] arr = {5, 10, 15};
+for (int i = 0; i < arr.length; i++) {
+    System.out.print(arr[i] + " ");
+}
+// Output: 5 10 15
+
+Question 4: Ek int array {2, 4, 6, 8} ka size print karo.
+
+int[] arr = {2, 4, 6, 8};
+System.out.println(arr.length);  // Output: 4
+
+Question 5: Ek int array {7, 14, 21} me se first aur last element ka sum print karo.
+
+int[] arr = {7, 14, 21};
+int sum = arr[0] + arr[arr.length - 1];
+System.out.println(sum);  // Output: 28
+
+Question 6: Ek int array {1, 3, 5, 7, 9} ke sab elements ka sum print karo.
+
+int[] arr = {1, 3, 5, 7, 9};
+int sum = 0;
+for (int i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+System.out.println(sum);  // Output: 25
+
+Question 7: Ek array {3, 6, 9} ka har element ko 2 se multiply karke print karo.
+
+int[] arr = {3, 6, 9};
+for (int i = 0; i < arr.length; i++) {
+    System.out.print(arr[i] * 2 + " ");
+}
+// Output: 6 12 18
+
+Question 8: Array {4, 5, 6} ke beech wale element ko print karo.
+
+int[] arr = {4, 5, 6};
+System.out.println(arr[1]);  // Output: 5
+
+Question 9: Ek array {2, 3, 4, 5} ke har element ko 1 add karke print karo.
+
+int[] arr = {2, 3, 4, 5};
+for (int i = 0; i < arr.length; i++) {
+    System.out.print((arr[i] + 1) + " ");
+}
+// Output: 3 4 5 6
+
+Question 10: Ek array {1, 2, 3, 4} ke elements me se sirf even numbers print karo.
+
+int[] arr = {1, 2, 3, 4};
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+        System.out.print(arr[i] + " ");
+    }
+}
+// Output: 2 4
+🔥 IUC – If You Can Questions (With Answers) 🔥
+
+IUC 1: Ek array {11, 12, 13, 14} me se 13 wala number print karo.
+
+int[] arr = {11, 12, 13, 14};
+System.out.println(arr[2]);  // Output: 13
+
+IUC 2: Ek array {2, 4, 6, 8} ka sum nikalo using loop.
+
+int[] arr = {2, 4, 6, 8};
+int sum = 0;
+for (int i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+System.out.println(sum);  // Output: 20
+
+IUC 3: Ek array {5, 10, 15, 20} ke sabhi elements ko 5 se divide karke print karo.
+
+int[] arr = {5, 10, 15, 20};
+for (int i = 0; i < arr.length; i++) {
+    System.out.print((arr[i] / 5) + " ");
+}
+// Output: 1 2 3 4
+
+IUC 4: Array {3, 6, 9, 12} me se sirf 6 aur 12 print karo.
+
+int[] arr = {3, 6, 9, 12};
+System.out.println(arr[1]);
+System.out.println(arr[3]);
+// Output: 6 12
+
+IUC 5: Ek array {4, 8, 12} ka har element ko square karke print karo.
+
+int[] arr = {4, 8, 12};
+for (int i = 0; i < arr.length; i++) {
+    System.out.print((arr[i] * arr[i]) + " ");
+}
+// Output: 16 64 144
