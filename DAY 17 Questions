@@ -1,0 +1,18 @@
+Day 17 – Questions (logic building level 3 uestions)
+
+Question 1: Ek int array bana lo aur usme kuch values daal lo. Fir har element ka square print karo.
+Question 2: Ek int array bana lo aur usme kuch values daal lo. Fir har element me 2 add karke print karo.
+Question 3: Ek int array me se sirf positive numbers print karo.(arr[i] > 0)
+Question 4: Ek int array bana lo aur usme har element ko double karke print karo.
+Question 5: Ek int array bana lo aur usme second largest element print karo.
+Question 6: Ek int array ke har element ko 5 se divide karke print karo (integer division).
+Question 7: Ek int array me kitne negative numbers hain woh count karo aur print karo.
+Question 8: Ek int array me se smallest aur largest element print karo.
+Question 9: Ek int array me sirf woh elements print karo jo 3 se divisible hain.
+Question 10: Ek int array me se even elements print karo.
+
+IUC 1: Ek int array me se har element ka square root print karo (Math library nahi use karenge, seedha multiply karke square print karo).
+IUC 2: Ek int array me se har element ka cube print karo.
+IUC 3: Ek int array ke sabhi odd numbers ka sum calculate karo aur print karo.
+IUC 4: Ek int array ke sabhi elements ko 10 se bada kar do (har element me 10 add karke print karo).
+IUC 5: Ek int array me se har second element print karo (index 1, 3, 5, ...).
