@@ -1,0 +1,50 @@
+DAY 18 Questions (Nested Loop, pattern printing, small mathematics logic) super easy                                                            
+  
+Questoin 1 : Ek square pattern print karo 3x3 size ka using nested loop.
+(Example output:
+
+***
+***
+***
+)
+
+Question 2: Ek right-angled triangle pattern print karo jisme rows = 4 ho.
+Hint : last question ki tarhe try karo or i = 1 se start kar ke bahar wala loop i<=4 karo aur andar wala 
+lopp j = 0 se start karke j < i tak try karo aur khud se bhi koi tarika soch sakte ho
+(Example output:
+                    
+  
+*
+**
+***
+****
+)
+
+Question 3: 1 se 20 tak ke numbers me se sabhi even numbers ka sum print karo.
+
+Question 4: 1 se 20 tak ke numbers me se count karo kitne numbers 3 se divisible hain aur woh count print karo.
+
+Question 5: Kisi bhi ek number ka (maan lo n = 5) multiplication table print karo from 1 to 10.
+
+Question 6: 1 se 50 tak ke numbers me se sabhi odd numbers print karo.
+
+Question 7: 1 se 100 tak ke numbers me se har 10th number print karo.
+(Mtlb 10, 20, 30...).
+
+Question 8: 1 se 10 tak ke numbers ka sum print karo.( sum = 1 + 2 + 3 + 3 .. + 10)
+
+Question 9: Ek int array bana lo jisme kuch values daal lo aur uske har element ko 2 se multiply karke print karo.
+
+Question 10: Ek int array bana lo aur usme har element ko 5 se divide karke (integer division) print karo.
+
+IUC (If You Can – Practice) Questions
+
+IUC 1: Ek int array ke elements ka average print karo.
+
+IUC 2: Ek number n = 5 lo aur uska factorial calculate karke print karo.
+
+IUC 3: Ek int array ke sabhi elements ko reverse order me print karo.
+
+IUC 4: Ek int array me kitne even numbers hain woh count karo aur print karo.
+
+IUC 5: Ek int array ke har element ko square karke print karo.
