@@ -1,0 +1,131 @@
+Day 18 Answers (light logic building level 4)                                                            
+  
+Question 1: Ek nested loop bana kar 3x3 ka star pattern print karo.
+
+
+for(int i=1; i<=3; i++){
+    for(int j=1; j<=3; j++){
+        System.out.print("*");
+    }
+    System.out.println();
+}
+
+Question 2: Ek nested loop bana kar ek left-aligned triangle star pattern print karo (4 rows).
+
+for(int i=1; i<=4; i++){
+    for(int j=1; j<=i; j++){
+        System.out.print("*");
+    }
+    System.out.println();
+}
+
+Question 3: 1 se 20 tak ke even numbers ka sum print karo.
+
+int sum = 0;
+for(int i=1; i<=20; i++){
+    if(i % 2 == 0){
+        sum += i;
+    }
+}
+System.out.println(sum);
+
+Question 4: 1 se 20 tak ke 3 se divisible numbers ki counting karo aur print karo.
+
+int count = 0;
+for(int i=1; i<=20; i++){
+    if(i % 3 == 0){
+        count++;
+    }
+}
+System.out.println(count);
+
+Question 5: 5 ka table print karo using loop.
+
+int n = 5;
+for(int i=1; i<=10; i++){
+    System.out.println(n + " x " + i + " = " + (n*i));
+}
+
+Question 6: 1 se 50 tak ke odd numbers print karo.
+
+for(int i=1; i<=50; i++){
+    if(i % 2 != 0){
+        System.out.println(i);
+    }
+}
+
+Question 7: 10 se 100 tak ke multiples of 10 print karo.
+
+for(int i=10; i<=100; i+=10){
+    System.out.println(i);
+}
+
+Question 8: 1 se 10 tak ka sum print karo.
+
+int sum = 0;
+for(int i=1; i<=10; i++){
+    sum += i;
+}
+System.out.println(sum);
+
+Question 9:  Ek int array me har element ka double print karo.
+
+int[] arr = {2, 4, 6, 8, 10};
+for(int i=0; i<arr.length; i++){
+    System.out.println(arr[i]*2);
+}
+
+Question 10: Ek int array me har element ko 5 se divide karke print karo.
+
+int[] arr = {10, 20, 30, 40, 50};
+for(int i=0; i<arr.length; i++){
+    System.out.println(arr[i]/5);
+}
+
+💪 IUC (If You Can – Practice) Questions with Answers
+IUC 1: Ek int array me se average print karo.
+
+int[] arr = {10, 20, 30, 40, 50};
+int sum = 0;
+for(int i=0; i<arr.length; i++){
+    sum += arr[i];
+}
+double avg = (double)sum/arr.length;
+System.out.println(avg);
+
+IUC 2:
+Ek number ka factorial print karo (number = 5).
+
+int n = 5;
+int fact = 1;
+for(int i=1; i<=n; i++){
+    fact *= i;
+}
+System.out.println(fact);
+
+IUC 3:
+Ek int array ko reverse order me print karo.
+
+int[] arr = {1, 2, 3, 4, 5};
+for(int i=arr.length-1; i>=0; i--){
+    System.out.println(arr[i]);
+}
+
+IUC 4:
+Ek int array me kitne even numbers hain woh count karo.
+
+int[] arr = {1, 2, 3, 4, 5, 6};
+int count = 0;
+for(int i=0; i<arr.length; i++){
+    if(arr[i] % 2 == 0){
+        count++;
+    }
+}
+System.out.println(count);
+
+IUC 5: Ek int array me har element ka square print karo.
+
+int[] arr = {2, 3, 4, 5};
+for(int i=0; i<arr.length; i++){
+    System.out.println(arr[i]*arr[i]);
+}
