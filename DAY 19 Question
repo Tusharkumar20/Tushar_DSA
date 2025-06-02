@@ -1,0 +1,21 @@
+Day 19 Question(introducing 2D Array)                                                                                                                                                                                                        
+  
+Question 1: Ek 2D int array bana lo aur usme kuch values daal lo. Fir usko row by row print karo.
+Question 2:  Ek 2D int array lo aur uska har row ka sum print karo.
+Question 3:  Ek 2D int array lo aur uska har column ka sum print karo.
+Question 4: Ek 2D int array lo aur usme se even numbers ko print karo.
+Question 5: Ek 2D int array lo aur usme se odd numbers ko print karo.
+Question 6: Ek 2D int array lo aur usme se har element ko 2 se multiply karke print karo.
+Question 7: Ek 2D int array lo aur usme se har element ko 5 se bada karke print karo.
+Question 8: Ek 2D int array lo aur usme se har element ko uske row number se multiply karke print karo.
+(Maan lo row index 0 se start hoti hai)
+Question 9: Ek 2D int array lo aur usme se largest element print karo.
+Question 10: Ek 2D int array lo aur uska diagonal element print karo. (Assume karo square matrix hai)
+
+💪 IUC (If You Can) Practice:
+IUC 1: Ek 2D int array lo aur har element ko uske column number se multiply karke print karo.
+(Maan lo column index 0 se start hota hai)
+IUC 2: Ek 2D int array lo aur usme se har element ko row number + column number se add karke print karo.
+IUC 3: Ek 2D int array lo aur har element ko row wise reverse order me print karo.
+IUC 4: Ek 2D int array lo aur usme se sabhi elements ka sum print karo.
+IUC 5: Ek 2D int array lo aur usme se har element ka square print karo.
