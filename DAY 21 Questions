@@ -1,0 +1,48 @@
+Day 21 Questions (Light Logic Building Level 6)                                                            
+
+Question 1:
+Ek int array bana lo aur usme sabhi elements ka sum print karo.
+
+Question 2:
+Ek int array me se even elements print karo.
+
+Question 3:
+Ek int array bana lo aur usme se largest element print karo.
+
+Question 4:
+Ek int array me se largest aur second largest element print karo.
+
+Question 5:
+Ek int array me sabhi odd elements ko unke index ke saath print karo.
+
+Question 6:
+Ek 2D int array lo aur usme se har row me smallest element print karo.
+
+Question 7:
+Ek 2D int array lo aur usme se har column me largest element print karo.
+
+Question 8:
+Ek int array me se sum of squares print karo (jaise 2 ka square + 3 ka square + ...).
+
+Question 9:
+Ek int array me se difference between max and min element print karo.
+
+Question 10:
+Ek int array me se woh element print karo jo sabse zyada baar aaya ho (mode).
+
+IUC (If You Can) Questions
+
+IUC 1:
+Ek int array bana lo jisme 1 se 10 tak ke numbers hain, lekin ek number missing hai. Missing number print karo.
+
+IUC 2:
+Ek int array me se duplicate elements print karo. (Hint: Ek element kitni baar aaya woh count karo.)
+
+IUC 3:
+Ek int array me se unique elements print karo. (Ek element sirf ek baar print karna hai.)
+
+IUC 4:
+Ek 2D int array ke diagonal elements ka sum print karo.
+
+IUC 5:
+Ek int array me se sabhi even elements ko square karke print karo.
