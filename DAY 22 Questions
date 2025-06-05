@@ -1,0 +1,33 @@
+Day 22 Questions (Light Logic Building Level 7)
+
+Question 1: Ek int array bana lo aur usme se sabse chhota element print karo.
+
+Question 2: Ek int array bana lo aur usme se sabse bada element print karo.
+
+Question 3: Ek int array bana lo aur usme har element ko uske index se multiply karke print karo.
+
+Question 4: Ek int array bana lo aur usme sirf woh elements print karo jo 4 se divisible hain.
+
+Question 5: Ek int array bana lo aur usme se har second element print karo (index 1, 3, 5, …).
+
+Question 6: Ek int array bana lo aur usme se negative elements ka count print karo.
+
+Question 7: Ek int array bana lo aur usme se sabhi even elements ka sum print karo.
+
+Question 8: Ek int array bana lo aur usme se odd elements ka average print karo (integer division).
+
+Question 9: Ek 2D int array bana lo aur uske diagonal elements ka sum print karo.
+
+Question 10: Ek 2D int array bana lo aur usme se har element ko uske index sum (row+column) se multiply karke print karo.
+
+Day 22 - IUC (If You Can) Questions
+
+IUC 1: Ek int array bana lo aur usme se har element ko 3 se divide karke print karo (integer division).
+
+IUC 2: Ek int array bana lo aur usme se har element ka square print karo.
+
+IUC 3: Ek int array bana lo aur usme se har element ka cube print karo.
+
+IUC 4: Ek int array bana lo aur uske elements ko reverse order me print karo.
+
+IUC 5: Ek 2D int array bana lo aur uske sabhi elements ka total sum print karo.
