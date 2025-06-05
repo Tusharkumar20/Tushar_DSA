@@ -1,0 +1,146 @@
+Day 21 Answers (Light Logic Building Level 6)
+
+Question 1: Ek int array bana lo aur usme sabhi elements ka sum print karo.
+
+int[] arr = {1, 2, 3, 4, 5};
+int sum = 0;
+for (int i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+System.out.println("Sum: " + sum);
+
+Question 2: Ek int array bana lo aur usme har element ko 3 se multiply karke print karo.
+
+int[] arr = {1, 2, 3, 4, 5};
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i] * 3);
+}
+
+Question 3: Ek int array bana lo aur usme se har odd element print karo.
+
+int[] arr = {1, 2, 3, 4, 5};
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 != 0) {
+        System.out.println(arr[i]);
+    }
+}
+Question 4: Ek int array bana lo aur usme sabse bada element print karo.
+
+int[] arr = {1, 7, 3, 4, 5};
+int max = arr[0];
+for (int i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+}
+System.out.println("Max: " + max);
+
+Question 5: Ek int array bana lo aur usme har element ko index ke saath print karo.
+
+int[] arr = {1, 2, 3, 4, 5};
+for (int i = 0; i < arr.length; i++) {
+    System.out.println("Index " + i + ": " + arr[i]);
+}
+
+Question 6: Ek int array bana lo aur usme se negative elements count karke print karo.
+
+int[] arr = {1, -2, 3, -4, 5};
+int count = 0;
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+        count++;
+    }
+}
+System.out.println("Negative elements: " + count);
+
+Question 7: Ek int array bana lo aur usme sabhi elements ka average print karo (integer division).
+
+int[] arr = {1, 2, 3, 4, 5};
+int sum = 0;
+for (int i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+System.out.println("Average: " + (sum / arr.length));
+
+Question 8: Ek int array bana lo aur usme second smallest element print karo.
+
+int[] arr = {5, 3, 1, 4, 2};
+int first = Integer.MAX_VALUE;
+int second = Integer.MAX_VALUE;
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] < first) {
+        second = first;
+        first = arr[i];
+    } else if (arr[i] < second && arr[i] != first) {
+        second = arr[i];
+    }
+}
+System.out.println("Second smallest: " + second);
+
+Question 9: Ek 2D int array bana lo aur uska har row ka sum print karo.
+
+int[][] arr = {{1, 2, 3}, {4, 5, 6}};
+for (int i = 0; i < arr.length; i++) {
+    int sum = 0;
+    for (int j = 0; j < arr[i].length; j++) {
+        sum += arr[i][j];
+    }
+    System.out.println("Row " + i + " ka sum: " + sum);
+}
+
+Question 10: Ek 2D int array bana lo aur uska har column ka sum print karo.
+
+int[][] arr = {{1, 2, 3}, {4, 5, 6}};
+for (int j = 0; j < arr[0].length; j++) {
+    int sum = 0;
+    for (int i = 0; i < arr.length; i++) {
+        sum += arr[i][j];
+    }
+    System.out.println("Column " + j + " ka sum: " + sum);
+}
+
+IUC (If You Can) Answers
+
+IUC 1: Ek int array bana lo aur usme se har element ka square print karo.
+
+int[] arr = {1, 2, 3, 4, 5};
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i] * arr[i]);
+}
+
+IUC 2: Ek int array bana lo aur usme se har element ko reverse order me print karo.
+
+int[] arr = {1, 2, 3, 4, 5};
+for (int i = arr.length - 1; i >= 0; i--) {
+    System.out.println(arr[i]);
+}
+
+IUC 3: Ek int array bana lo aur usme har element me 2 add karke print karo.
+
+int[] arr = {1, 2, 3, 4, 5};
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i] + 2);
+}
+
+IUC 4:Ek int array bana lo aur usme sirf woh elements print karo jo 5 se divisible hain.
+
+int[] arr = {5, 10, 15, 20, 25};
+for (int i = 0; i < arr.length; i++) {
+    if (arr[i] % 5 == 0) {
+        System.out.println(arr[i]);
+    }
+}
+IUC 5: Ek 2D int array bana lo aur uske diagonal elements print karo (sirf square matrix ke liye).
+
+int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i][i]);
+}
+
+
+java
+Copy code
+int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i][i]);
+}
