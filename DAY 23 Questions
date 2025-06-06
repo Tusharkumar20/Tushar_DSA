@@ -1,0 +1,22 @@
+Day 23 - Questions (Time Complexity Basics)
+
+Question 1: Ek simple for loop likho jo 1 se 10 tak ke numbers print karta hai. Bataye iska time complexity kya hai?
+
+Question 2: Ek nested loop likho jisme 1 se 3 tak outer loop chalta hai aur andar 1 se 3 tak hi inner loop. Bataye iska time complexity kya hai?
+
+Question 3: Ek loop likho jisme i ki value har iteration me i = i * 2 hoti hai (starting from 1). Iska time complexity kya hai?
+
+Question 4: Ek array ko linear search karke ek number dhundo. Bataye iska time complexity kya hai?
+
+Question 5: Ek sorted array me binary search ka example likho aur iska time complexity kya hai?
+
+Question 6: Ek nested loop likho jisme outer loop 1 se N tak chalta hai aur inner loop bhi 1 se N tak chalta hai. Bataye iska time complexity kya hai?
+
+Question 7: Ek 2D array ka sum calculate karo aur bataye iska time complexity kya hai?
+
+Question 8: Ek simple array ka maximum element dhundne ka code likho aur bataye iska time complexity kya hai?
+
+Question 9: Ek nested loop likho jisme outer loop 1 se N tak chalta hai aur inner loop 1 se 10 tak chalta hai. Bataye iska time complexity kya hai?
+
+Question 10: Ek loop likho jisme outer loop 1 se N tak chalta hai aur har iteration me inner loop us outer index (i) tak chalta hai. Bataye iska time complexity kya hai?
+
