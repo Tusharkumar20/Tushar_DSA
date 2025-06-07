@@ -1,0 +1,21 @@
+Day 24 - Questions (Space Complexity Basics)
+
+Question 1: Ek simple for loop likho jo 1 se N tak ke numbers print karta hai. Bataye iska space complexity kya hai?
+
+Question 2: Ek int array bana lo aur usme N elements daalo. Bataye iska space complexity kya hai?
+
+Question 3: Ek nested loop likho jisme 1 se N tak outer loop chalta hai aur 1 se N tak hi inner loop chalta hai. Bataye iska space complexity kya hai?
+
+Question 4: Ek recursive factorial function likho aur uska space complexity kya hai, wo batao.
+
+Question 5: Ek function likho jo array ke elements ka sum calculate karta hai. Bataye iska space complexity kya hai?
+
+Question 6: Ek 2D int array bana lo aur uska total sum print karo. Bataye iska space complexity kya hai?
+
+Question 7: Ek string reverse karne ka function likho aur uska space complexity kya hai?
+
+Question 8: Ek program likho jisme ek extra array use kiya gaya ho jisme input array ke saare elements copy kiye gaye hain. Bataye iska space complexity kya hai?
+
+Question 9: Ek program likho jisme bina kisi extra data structure ke array ko reverse karna hai. Bataye iska space complexity kya hai?
+
+Question 10: Ek recursive fibonacci function likho aur uska space complexity kya hai?
