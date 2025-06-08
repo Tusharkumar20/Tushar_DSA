@@ -7,7 +7,7 @@ what if question ke hisab se hame size conform hi na ho to ham numbers char ya s
 store karenge hmmmm... yes ArrayList iska size fix nahi hota aur isme ham kitne bhi elements dal sakte hai
 ArrayList ko banane ka tarika hai 
 ArrayList<Integer> lst = new ArrayList<>(); // Integer ki jage Character ya String bhi ho sakta hai
-              --- ye variable Hai iski jage kuch bhi ho sakta hai 
+                   --- ye variable Hai iski jage kuch bhi ho sakta hai 
 agar Question nahi samag aa rahe matlab tumne light logic building wale series nahi ki hai
 to fir day 15 se day 22 ke questions repeat karke fir inko again try karna ho jainge
 
