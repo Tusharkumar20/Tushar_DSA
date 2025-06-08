@@ -1,0 +1,53 @@
+Day 25 Questions (Very Basic ArrayList + Light Logic-Building)                                                            
+
+yad hai ham jab array banate the tab ham batate the ki int array kitne size ka hoga ya aur 
+agar ham us jage kuch elemnt nahi dalte the tab waha by default zero hota tha right
+int[] arr = new int[3]; // By default {0, 0, 0} array ready ho chuki hai just inki values cchange karni hai
+what if question ke hisab se hame size conform hi na ho to ham numbers char ya string kaise 
+store karenge hmmmm... yes ArrayList iska size fix nahi hota aur isme ham kitne bhi elements dal sakte hai
+ArrayList ko banane ka tarika hai 
+ArrayList<Integer> lst = new ArrayList<>(); // Integer ki jage Character ya String bhi ho sakta hai
+              --- ye variable Hai iski jage kuch bhi ho sakta hai 
+agar Question nahi samag aa rahe matlab tumne light logic building wale series nahi ki hai
+to fir day 15 se day 22 ke questions repeat karke fir inko again try karna ho jainge
+
+
+Question 1: Ek ArrayList bana lo aur usme kuch numbers daal lo. Uske baad ArrayList print karo.
+
+first Question ka answer de de raha hu for doing further Questions 
+ArrayList<Integer> list = new ArrayList<>();
+list.add(10);
+list.add(20);
+list.add(30);
+System.out.println(list);
+
+
+
+Question 2: Ek ArrayList bana lo aur usme kuch values add karo. Fir har element ko print karo using for-each loop.
+
+Question 3: Ek ArrayList bana lo aur usme 5 numbers daal kar uska size print karo.
+
+Question 4: Ek ArrayList bana lo aur usme kuch numbers daal kar har element ko 2 se multiply karke print karo.
+
+Question 5: Ek ArrayList bana lo aur usme kuch numbers daal kar maximum element print karo.
+
+Question 6: Ek ArrayList bana lo aur usme se sabhi even elements print karo.
+
+Question 7: Ek ArrayList bana lo aur usme se sabhi odd elements ka sum print karo.
+
+Question 8: Ek ArrayList bana lo aur usme se koi specific number (jaise 5) ko check karo ki woh present hai ya nahi.
+
+Question 9: Ek ArrayList bana lo aur usme se sabhi elements ko reverse order me print karo.
+
+Question 10: Ek ArrayList bana lo aur usme har element me 10 add karke print karo.
+
+IUC (If You Can) Questions
+IUC 1: Ek ArrayList bana lo aur usme se second largest element print karo.
+
+IUC 2: Ek ArrayList bana lo aur usme se negative elements count karo aur print karo.
+
+IUC 3: Ek ArrayList bana lo aur usme se sabhi multiples of 3 print karo.
+
+IUC 4: Ek ArrayList bana lo aur usme se duplicate elements remove karke print karo.
+
+IUC 5: Ek ArrayList bana lo aur usme se har alternate element print karo (index 0, 2, 4, ...)
