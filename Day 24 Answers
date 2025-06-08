@@ -1,0 +1,92 @@
+Day 24 Answers (Space Complexity)
+
+Question 1: Ek simple for loop likho jo 1 se N tak ke numbers print karta hai. Bataye iska space complexity kya hai?
+
+for(int i = 1; i <= n; i++){
+    System.out.println(i);
+}
+// Space Complexity: O(1) — no extra space used except for loop variable.
+
+Question 2: Ek int array bana lo aur usme N elements daalo. Bataye iska space complexity kya hai?
+
+int[] arr = new int[n];
+// Space Complexity: O(n) — array of size n.
+confuse mat ho usme jab ham elements dal denge for loop se tab wo O(n) time complexity ho gi but abhi ham sirf O(n) itne space le rahe hai for array so ye space complexity hai
+
+Question 3: Ek nested loop likho jisme 1 se N tak outer loop chalta hai aur 1 se N tak hi inner loop chalta hai. Bataye iska space complexity kya hai?
+
+for(int i = 1; i <= n; i++){
+    for(int j = 1; j <= n; j++){
+        System.out.println(i + "," + j);
+    }
+}
+// Space Complexity: O(1) — no extra space apart from loop variables.
+
+Question 4: Ek recursive factorial function likho aur uska space complexity kya hai, wo batao.
+
+int factorial(int n){
+    if(n == 0) return 1;
+    return n * factorial(n - 1);
+}
+// Space Complexity: O(n) — because of call stack.
+
+Question 5: Ek function likho jo array ke elements ka sum calculate karta hai. Bataye iska space complexity kya hai?
+
+int sum(int[] arr){
+    int total = 0;
+    for(int i = 0; i < arr.length; i++){
+        total += arr[i];
+    }
+    return total;
+}
+// Space Complexity: O(1) — single variable total.
+
+Question 6: Ek 2D int array bana lo aur uska total sum print karo. Bataye iska space complexity kya hai?
+
+int[][] arr = {{1,2,3},{4,5,6}};
+int sum = 0;
+for(int i = 0; i < arr.length; i++){
+    for(int j = 0; j < arr[i].length; j++){
+        sum += arr[i][j];
+    }
+}
+System.out.println(sum);
+// Space Complexity: O(n*m) — for storing the 2D array, O(1) extra space.
+
+Question 7: Ek string reverse karne ka function likho aur uska space complexity kya hai?
+
+String reverse(String s){
+    String rev = "";
+    for(int i = s.length() - 1; i >= 0; i--){
+        rev += s.charAt(i);
+    }
+    return rev;
+}
+// Space Complexity: O(n) — for storing the reversed string.
+
+Question 8: Ek program likho jisme ek extra array use kiya gaya ho jisme input array ke saare elements copy kiye gaye hain. Bataye iska space complexity kya hai?
+
+int[] arr = {1,2,3,4};
+int[] copy = new int[arr.length];
+for(int i = 0; i < arr.length; i++){
+    copy[i] = arr[i];
+}
+// Space Complexity: O(n) — extra array of size n.
+
+Question 9: Ek program likho jisme bina kisi extra data structure ke array ko reverse karna hai. Bataye iska space complexity kya hai?
+
+int[] arr = {1,2,3,4,5};
+for(int i = 0; i < arr.length / 2; i++){
+    int temp = arr[i];
+    arr[i] = arr[arr.length - 1 - i];
+    arr[arr.length - 1 - i] = temp;
+}
+// Space Complexity: O(1) — constant space.
+
+Question 10: Ek recursive fibonacci function likho aur uska space complexity kya hai?
+
+int fibonacci(int n){
+    if(n <= 1) return n;
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+// Space Complexity: O(n) — call stack depth.
