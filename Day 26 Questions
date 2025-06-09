@@ -1,0 +1,39 @@
+Day 26 Questions (ArrayList Practice level 2)
+
+Question 1: Ek ArrayList bana lo aur usme 5 numbers daal lo. Fir 3rd index wala element print karo.
+Hint: list.get(index);
+
+Question 2: Ek ArrayList bana lo aur usme 5 numbers daal lo. Fir 2nd index wala element ko update karke usme 100 set karo aur poori list print karo.
+Hint: list.set(index, value);
+
+Question 3: Ek ArrayList bana lo aur usme se koi specific element (jaise 10) ko remove karo aur list print karo.
+
+Hint: list.remove(Integer.valueOf(element));
+
+Question 4: Ek ArrayList bana lo aur usme 5 numbers daal lo. Fir check karo ki list empty hai ya nahi aur print karo.
+
+Hint: list.isEmpty();
+
+Question 5: Ek ArrayList bana lo aur usme 5 numbers daal lo. Fir usme se saare elements ko clear karo aur size print karo.
+
+Hint: list.clear();
+
+Question 6: Ek ArrayList bana lo aur usme kuch numbers daal lo. Fir har element ko index ke saath print karo. (jaise: Index 0 ka element 5 hai).
+
+Hint: loop and list.get(i);
+
+Question 7: Ek ArrayList bana lo aur usme se sabhi elements ko double karke ek nayi ArrayList me daalo aur nayi list print karo.
+
+Hint: newList.add(element * 2);
+
+Question 8: Ek ArrayList bana lo aur usme 5 numbers daal lo. Fir maximum aur minimum element print karo.
+
+Hint: loop ya Collections.max(list);
+
+Question 9: Ek ArrayList bana lo aur usme 5 numbers daal lo. Fir sum calculate karke print karo.
+
+Hint: loop and sum variable.
+
+Question 10: Ek ArrayList bana lo aur usme se har even element ko remove karo aur list print karo.
+
+Hint: list.removeIf(element -> element % 2 == 0);
