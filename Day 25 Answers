@@ -1,0 +1,176 @@
+Day 25 Answers (ArrayList level 1 answers)
+
+
+Question 1: Ek ArrayList bana lo aur usme kuch numbers daal lo. Uske baad ArrayList print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(10);
+list.add(20);
+list.add(30);
+System.out.println(list);
+
+Question 2: Ek ArrayList bana lo aur usme kuch values add karo. Fir har element ko print karo using for-each loop.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(5);
+list.add(15);
+list.add(25);
+for(int num : list){
+    System.out.println(num);
+}
+
+Question 3: Ek ArrayList bana lo aur usme 5 numbers daal kar uska size print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(3);
+list.add(4);
+list.add(5);
+System.out.println("Size: " + list.size());
+
+Question 4: Ek ArrayList bana lo aur usme kuch numbers daal kar har element ko 2 se multiply karke print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(2);
+list.add(4);
+list.add(6);
+for(int num : list){
+    System.out.println(num * 2);
+}
+
+Question 5: Ek ArrayList bana lo aur usme kuch numbers daal kar maximum element print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(5);
+list.add(12);
+list.add(8);
+int max = list.get(0);
+for(int num : list){
+    if(num > max){
+        max = num;
+    }
+}
+System.out.println("Max: " + max);
+
+Question 6: Ek ArrayList bana lo aur usme se sabhi even elements print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(3);
+list.add(4);
+list.add(5);
+list.add(6);
+for(int num : list){
+    if(num % 2 == 0){
+        System.out.println(num);
+    }
+}
+
+Question 7: Ek ArrayList bana lo aur usme se sabhi odd elements ka sum print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(3);
+list.add(4);
+int sum = 0;
+for(int num : list){
+    if(num % 2 != 0){
+        sum += num;
+    }
+}
+System.out.println("Sum of odd: " + sum);
+
+Question 8: Ek ArrayList bana lo aur usme se koi specific number (jaise 5) ko check karo ki woh present hai ya nahi.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(5);
+list.add(10);
+list.add(15);
+if(list.contains(5)){
+    System.out.println("5 present hai");
+} else {
+    System.out.println("5 nahi hai");
+}
+
+Question 9: Ek ArrayList bana lo aur usme se sabhi elements ko reverse order me print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(3);
+for(int i = list.size() - 1; i >= 0; i--){
+    System.out.println(list.get(i));
+}
+
+Question 10: Ek ArrayList bana lo aur usme har element me 10 add karke print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(5);
+list.add(10);
+list.add(15);
+for(int num : list){
+    System.out.println(num + 10);
+}
+
+
+Day 25 IUC Answers
+
+IUC 1: Ek ArrayList bana lo aur usme 1 se 10 tak ke numbers daal lo. Fir usme se 5 se bada elements print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+for(int i = 1; i <= 10; i++){
+    list.add(i);
+}
+for(int num : list){
+    if(num > 5){
+        System.out.println(num);
+    }
+}
+
+IUC 2: Ek ArrayList bana lo aur usme se har element ka square print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(2);
+list.add(3);
+list.add(4);
+for(int num : list){
+    System.out.println(num * num);
+}
+
+IUC 3: Ek ArrayList bana lo aur usme se har second element print karo (index 1, 3, 5,…).
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(3);
+list.add(4);
+list.add(5);
+for(int i = 1; i < list.size(); i += 2){
+    System.out.println(list.get(i));
+}
+
+IUC 4: Ek ArrayList bana lo aur usme se sabhi odd elements ka sum print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(3);
+list.add(4);
+int sum = 0;
+for(int num : list){
+    if(num % 2 != 0){
+        sum += num;
+    }
+}
+System.out.println("Sum of odd: " + sum);
+
+IUC 5: Ek ArrayList bana lo aur usme se sabhi elements ko reverse order me print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(10);
+list.add(20);
+list.add(30);
+for(int i = list.size() - 1; i >= 0; i--){
+    System.out.println(list.get(i));
+}
