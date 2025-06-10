@@ -1,0 +1,30 @@
+Day 27 Questions (ArrayList Level 3)
+Question 1: Ek ArrayList bana lo aur usme 1 se 10 tak ke numbers daal lo. Fir usme se sabhi elements ko reverse order me print karo.
+Hint: Use for(int i = list.size()-1; i >= 0; i--)
+
+Question 2 Ek ArrayList bana lo aur usme se even aur odd elements ko alag alag ArrayList me store karo aur dono print karo.
+Hint: Use 2 separate ArrayLists.
+
+Question 3: Ek ArrayList bana lo aur usme se har element ko 2 se multiply karke nayi ArrayList me daalo aur usko print karo.
+Hint: Create a new ArrayList and fill it.
+
+Question 4: Ek ArrayList bana lo aur usme se har element ko square karke nayi ArrayList me daalo aur usko print karo.
+Hint: num * num karo.
+
+Question 5 Ek ArrayList bana lo aur usme se har element ko user input ke number se multiply karke print karo.
+Hint: User input ko ek variable me store karo, fir har element me multiply karo.
+
+Question 6: Ek ArrayList bana lo aur usme se maximum aur minimum element print karo.
+Hint: Use simple loop to find max and min.
+
+Question 7: Ek ArrayList bana lo aur usme se duplicate elements remove karke print karo.
+Hint: Use contains() or nested loop to remove duplicates.
+
+Question 8: Ek ArrayList bana lo aur usme se har element ko 5 add karke print karo.
+Hint: Just add 5 to each element while printing.
+
+Question 9: Ek ArrayList bana lo aur usme se 2D array jaisa structure print karo (ek row me 3 elements print karo, fir next row).
+ Hint: Use nested loop or index checking.
+
+Question 10: Ek ArrayList bana lo aur usme se har element ko index ke sath print karo (index 0: 1, index 1: 2, etc.).
+Hint: Use for(int i = 0; i < list.size(); i++).
