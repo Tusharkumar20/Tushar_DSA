@@ -1,0 +1,138 @@
+Day 27 Answers (ArrayList Level 3)
+Question 1: Ek ArrayList bana lo aur usme 1 se 10 tak ke numbers daal lo. Fir usme se sabhi elements ko reverse order me print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+for(int i = 1; i <= 10; i++){
+    list.add(i);
+}
+for(int i = list.size() - 1; i >= 0; i--){
+    System.out.print(list.get(i) + " ");
+}
+
+Question 2: Ek ArrayList bana lo aur usme se even aur odd elements ko alag alag ArrayList me store karo aur dono print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(3);
+list.add(4);
+list.add(5);
+ArrayList<Integer> evenList = new ArrayList<>();
+ArrayList<Integer> oddList = new ArrayList<>();
+for(int num : list){
+    if(num % 2 == 0){
+        evenList.add(num);
+    } else {
+        oddList.add(num);
+    }
+}
+System.out.println("Even Elements: " + evenList);
+System.out.println("Odd Elements: " + oddList);
+
+Question 3: Ek ArrayList bana lo aur usme se har element ko 2 se multiply karke nayi ArrayList me daalo aur usko print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(3);
+list.add(6);
+list.add(9);
+list.add(12);
+ArrayList<Integer> newList = new ArrayList<>();
+for(int num : list){
+    newList.add(num * 2);
+}
+System.out.println(newList);
+
+Question 4: Ek ArrayList bana lo aur usme se har element ko square karke nayi ArrayList me daalo aur usko print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(2);
+list.add(3);
+list.add(4);
+list.add(5);
+ArrayList<Integer> squaredList = new ArrayList<>();
+for(int num : list){
+    squaredList.add(num * num);
+}
+System.out.println(squaredList);
+
+Question 5: Ek ArrayList bana lo aur usme se har element ko user input ke number se multiply karke print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(3);
+list.add(4);
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter a number to multiply: ");
+int n = sc.nextInt();
+for(int num : list){
+    System.out.println(num * n);
+}
+
+Question 6: Ek ArrayList bana lo aur usme se maximum aur minimum element print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(23);
+list.add(45);
+list.add(12);
+list.add(78);
+int max = list.get(0);
+int min = list.get(0);
+for(int num : list){
+    if(num > max) max = num;
+    if(num < min) min = num;
+}
+System.out.println("Max: " + max);
+System.out.println("Min: " + min);
+
+Question 7: Ek ArrayList bana lo aur usme se duplicate elements remove karke print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(2);
+list.add(3);
+list.add(3);
+list.add(4);
+ArrayList<Integer> uniqueList = new ArrayList<>();
+for(int num : list){
+    if(!uniqueList.contains(num)){
+        uniqueList.add(num);
+    }
+}
+System.out.println(uniqueList);
+
+Question 8: Ek ArrayList bana lo aur usme se har element ko 5 add karke print karo.
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(5);
+list.add(10);
+list.add(15);
+list.add(20);
+for(int num : list){
+    System.out.println(num + 5);
+}
+
+Question 9: Ek ArrayList bana lo aur usme se 2D array jaisa structure print karo (ek row me 3 elements print karo, fir next row).
+
+ArrayList<Integer> list = new ArrayList<>();
+for(int i = 1; i <= 9; i++){
+    list.add(i);
+}
+for(int i = 0; i < list.size(); i++){
+    System.out.print(list.get(i) + " ");
+    if((i + 1) % 3 == 0){
+        System.out.println();
+    }
+}
+
+Question 10: Ek ArrayList bana lo aur usme se har element ko index ke sath print karo (index 0: 1, index 1: 2, etc.).
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(7);
+list.add(14);
+list.add(21);
+list.add(28);
+for(int i = 0; i < list.size(); i++){
+    System.out.println("Index " + i + ": " + list.get(i));
+}
