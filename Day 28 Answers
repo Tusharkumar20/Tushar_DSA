@@ -1,0 +1,91 @@
+Day 28 Answers (HashSet Level 1)
+
+Question 1: Ek HashSet bana lo aur usme 5 unique elements daalo. Fir poora HashSet print karo.
+
+HashSet<Integer> set = new HashSet<>();
+set.add(10);
+set.add(20);
+set.add(30);
+set.add(40);
+set.add(50);
+System.out.println(set);
+
+Question 2: Ek HashSet bana lo aur usme duplicate elements add karne ki koshish karo.
+
+HashSet<Integer> set = new HashSet<>();
+set.add(10);
+set.add(20);
+set.add(10); // Duplicate
+set.add(30);
+System.out.println(set); // Duplicate 10 sirf ek baar hi dikhega
+
+Question 3: Ek HashSet bana lo aur usme se ek element remove karo aur fir print karo.
+
+HashSet<String> set = new HashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("cherry");
+set.remove("banana");
+System.out.println(set);
+
+Question 4: Ek HashSet bana lo aur usme check karo ki koi element present hai ya nahi.
+
+HashSet<Integer> set = new HashSet<>();
+set.add(5);
+set.add(10);
+set.add(15);
+System.out.println(set.contains(10)); // true
+System.out.println(set.contains(50)); // false
+
+Question 5: Ek HashSet bana lo aur usme se saare elements ko clear karo aur size print karo.
+
+HashSet<Integer> set = new HashSet<>();
+set.add(1);
+set.add(2);
+set.add(3);
+set.clear();
+System.out.println(set.size()); // 0
+
+Question 6: Ek HashSet bana lo aur usme 10 elements daal lo. Fir set ka size print karo.
+
+HashSet<Integer> set = new HashSet<>();
+for (int i = 1; i <= 10; i++) {
+    set.add(i);
+}
+System.out.println("Size: " + set.size()); // 10
+
+Question 7: Ek HashSet bana lo aur check karo ki wo empty hai ya nahi.
+
+HashSet<String> set = new HashSet<>();
+set.add("dog");
+set.add("cat");
+System.out.println(set.isEmpty()); // false
+
+Question 8: Ek HashSet bana lo aur usme sabhi elements ko ek ek karke print karo.
+
+HashSet<Integer> set = new HashSet<>();
+set.add(100);
+set.add(200);
+set.add(300);
+for (int num : set) {
+    System.out.println(num);
+}
+
+Question 9: Ek HashSet bana lo aur usme duplicate strings daal kar dekho ki kitne unique elements bache hain.
+
+HashSet<String> set = new HashSet<>();
+set.add("apple");
+set.add("banana");
+set.add("apple"); // Duplicate
+set.add("mango");
+System.out.println("Unique Elements: " + set.size()); // 3
+
+Question 10: Ek HashSet bana lo aur usme har element ke sath uska length print karo.
+
+HashSet<String> set = new HashSet<>();
+set.add("apple");
+set.add("bat");
+set.add("cat");
+for (String str : set) {
+    System.out.println(str + " - length: " + str.length());
+}
