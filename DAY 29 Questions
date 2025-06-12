@@ -1,0 +1,31 @@
+Day 29 Questions (HashSet Level 2)
+
+Question 1: Ek array diya gaya hai {1, 2, 3, 2, 4, 5, 1}. Ek HashSet ka use karke unique elements print karo.
+Hint: Use for loop and set.add().
+
+Question 2: Ek HashSet diya gaya hai. Har element ko ek ek karke check karo ki kya woh even hai ya odd.
+Hint: Use enhanced for loop.
+
+Question 3: Do HashSet bana lo. Ek me {1,2,3,4} aur doosre me {3,4,5,6}. Unka intersection (common elements) print karo.
+Hint: Use set1.retainAll(set2).
+
+Question 4: Do HashSet bana lo. Ek me {1,2,3} aur doosre me {3,4,5}. Unka union print karo.
+Hint: Use set1.addAll(set2).
+
+Question 5: Ek string array diya gaya hai {"apple", "banana", "apple", "cherry", "banana"}. Unique words print karo.
+Hint: Store in HashSet<String>.
+
+Question 6: Ek HashSet diya gaya hai. Har element ko 2 se multiply karke print karo.
+Hint: Use for-each loop.
+
+Question 7: Ek HashSet bana lo aur user se 5 numbers input lo aur unko HashSet me daalo. Fir usko print karo.
+Hint: Use Scanner + loop.
+
+Question 8: Ek HashSet me se sabhi elements ko ArrayList me convert karo aur print karo.
+Hint: new ArrayList<>(set).
+
+Question 9: Ek HashSet me se sabhi elements ka sum nikaalo aur print karo.
+Hint: Use loop and sum variable.
+
+Question 10: Ek HashSet me se sirf woh elements print karo jo 10 se bade hain.
+Hint: Use if condition inside loop.
