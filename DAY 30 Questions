@@ -1,0 +1,33 @@
+Day 30 Questions: HashSet Level 3
+
+
+Question 1: Ek integer array {1,2,3,4,2,3,5} diya gaya hai. Sirf woh elements print karo jo baar baar aa rahe hain (duplicates).
+Hint: Ek HashSet aur ek extra list ya Set ka use karo.
+
+Question 2: Ek HashSet me 10 names daal lo. Fir check karo ki koi specific name (jaise “Rahul”) usme present hai ya nahi.
+Hint: Use set.contains("Rahul").
+
+Question 3: User se 5 city names input lo aur HashSet me daalo. Fir check karo ki user ne “Delhi” daala ya nahi.
+Hint: Input ke baad contains() lagao.
+
+Question 4: Ek HashSet diya gaya hai jisme employee ID hai. Check karo ki koi employee ki ID repeated to nahi hai.
+Hint: Add karte waqt agar add() false return kare to repeat hai.
+
+Question 5: Ek HashSet diya gaya hai jisme kuch numbers hain. Sirf prime numbers ko hi print karo.
+Hint: Prime checking function banao.
+
+Question 6: Ek array diya gaya hai {1,2,3,4,5,6}. Use HashSet me daalo aur fir 1 se 10 tak check karo ki kaun se numbers missing hain.
+Hint: !set.contains(i) wala loop.
+
+Question 7: Do HashSet hai - ek students ka aur ek un students ka jinhone homework diya. Un dono ka difference print karo (jinhone homework nahi diya).
+Hint: set1.removeAll(set2).
+
+Question 8: Ek sentence input lo aur uske sabhi unique words print karo.
+Hint: split() se array banao, HashSet me daalo.
+
+Question 9: Ek string me se sabhi unique characters print karo.
+Hint: toCharArray() karke set me daalo.
+
+Question 10: Ek HashSet me se har element ko square karke ek naye HashSet me daalo aur print karo.
+Hint: Ek naya set banao aur add(num*num) karo.
+
