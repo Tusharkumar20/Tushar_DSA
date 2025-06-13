@@ -1,0 +1,88 @@
+Day 29 Answers (HashSet Level 2)
+
+Question 1: Ek array diya gaya hai {1, 2, 3, 2, 4, 5, 1}. Ek HashSet ka use karke unique elements print karo.
+
+int[] arr = {1, 2, 3, 2, 4, 5, 1};
+HashSet<Integer> set = new HashSet<>();
+for (int num : arr) {
+    set.add(num);
+}
+System.out.println("Unique elements: " + set);
+
+Question 2: Ek HashSet diya gaya hai. Har element ko ek ek karke check karo ki kya woh even hai ya odd.
+
+HashSet<Integer> set = new HashSet<>();
+set.add(10);
+set.add(15);
+set.add(20);
+for (int num : set) {
+    if (num % 2 == 0) {
+        System.out.println(num + " is Even");
+    } else {
+        System.out.println(num + " is Odd");
+    }
+}
+
+Question 3: Do HashSet bana lo. Ek me {1,2,3,4} aur doosre me {3,4,5,6}. Unka intersection print karo.
+
+HashSet<Integer> set1 = new HashSet<>(Arrays.asList(1, 2, 3, 4));
+HashSet<Integer> set2 = new HashSet<>(Arrays.asList(3, 4, 5, 6));
+set1.retainAll(set2);
+System.out.println("Common elements: " + set1);
+
+Question 4: Do HashSet bana lo. Ek me {1,2,3} aur doosre me {3,4,5}. Unka union print karo.
+
+HashSet<Integer> set1 = new HashSet<>(Arrays.asList(1, 2, 3));
+HashSet<Integer> set2 = new HashSet<>(Arrays.asList(3, 4, 5));
+set1.addAll(set2);
+System.out.println("Union: " + set1);
+
+Question 5: Ek string array diya gaya hai {"apple", "banana", "apple", "cherry", "banana"}. Unique words print karo.
+
+String[] fruits = {"apple", "banana", "apple", "cherry", "banana"};
+HashSet<String> set = new HashSet<>();
+for (String fruit : fruits) {
+    set.add(fruit);
+}
+System.out.println("Unique words: " + set);
+
+Question 6: Ek HashSet diya gaya hai. Har element ko 2 se multiply karke print karo.
+
+HashSet<Integer> set = new HashSet<>(Arrays.asList(3, 5, 7));
+for (int num : set) {
+    System.out.println(num * 2);
+}
+
+Question 7: Ek HashSet bana lo aur user se 5 numbers input lo aur unko HashSet me daalo. Fir usko print karo.
+
+Scanner sc = new Scanner(System.in);
+HashSet<Integer> set = new HashSet<>();
+System.out.println("Enter 5 numbers:");
+for (int i = 0; i < 5; i++) {
+    set.add(sc.nextInt());
+}
+System.out.println("HashSet: " + set);
+
+Question 8: Ek HashSet me se sabhi elements ko ArrayList me convert karo aur print karo.
+
+HashSet<Integer> set = new HashSet<>(Arrays.asList(10, 20, 30));
+ArrayList<Integer> list = new ArrayList<>(set);
+System.out.println("Converted List: " + list);
+
+Question 9: Ek HashSet me se sabhi elements ka sum nikaalo aur print karo.
+
+HashSet<Integer> set = new HashSet<>(Arrays.asList(5, 10, 15));
+int sum = 0;
+for (int num : set) {
+    sum += num;
+}
+System.out.println("Sum: " + sum);
+
+Question 10: Ek HashSet me se sirf woh elements print karo jo 10 se bade hain.
+
+HashSet<Integer> set = new HashSet<>(Arrays.asList(5, 12, 18, 7));
+for (int num : set) {
+    if (num > 10) {
+        System.out.println(num);
+    }
+}
