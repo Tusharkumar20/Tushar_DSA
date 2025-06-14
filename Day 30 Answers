@@ -1,0 +1,105 @@
+Day 30 Answers (HashSet Level 3)
+
+Question 1: Duplicate elements print karo
+
+int[] arr = {1, 2, 3, 4, 2, 3, 5};
+HashSet<Integer> set = new HashSet<>();
+HashSet<Integer> duplicates = new HashSet<>();
+for (int num : arr) {
+    if (!set.add(num)) {
+        duplicates.add(num);
+    }
+}
+System.out.println("Duplicates: " + duplicates);
+
+Question 2: HashSet me “Rahul” hai ya nahi check karo
+
+HashSet<String> names = new HashSet<>(Arrays.asList("Amit", "Rahul", "Priya", "Sita"));
+System.out.println(names.contains("Rahul") ? "Rahul present hai" : "Rahul nahi hai");
+
+Question 3: User input se cities daalo aur “Delhi” check karo
+
+Scanner sc = new Scanner(System.in);
+HashSet<String> cities = new HashSet<>();
+System.out.println("5 cities daalo:");
+for (int i = 0; i < 5; i++) {
+    cities.add(sc.nextLine());
+}
+System.out.println(cities.contains("Delhi") ? "Delhi daala gaya hai" : "Delhi nahi daala");
+
+Question 4: Repeated Employee ID detect karo
+
+int[] ids = {101, 102, 103, 101, 104};
+HashSet<Integer> set = new HashSet<>();
+boolean duplicateFound = false;
+for (int id : ids) {
+    if (!set.add(id)) {
+        System.out.println("Duplicate ID: " + id);
+        duplicateFound = true;
+    }
+}
+if (!duplicateFound) System.out.println("No duplicates");
+
+Question 5: Sirf prime numbers print karo
+
+HashSet<Integer> set = new HashSet<>(Arrays.asList(3, 4, 5, 10, 13, 15));
+for (int num : set) {
+    boolean isPrime = true;
+    if (num < 2) isPrime = false;
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) {
+        System.out.println(num + " is Prime");
+    }
+}
+
+Question 6: Missing numbers from 1 to 10
+
+int[] arr = {1, 2, 3, 4, 5, 6};
+HashSet<Integer> set = new HashSet<>();
+for (int num : arr) {
+    set.add(num);
+}
+for (int i = 1; i <= 10; i++) {
+    if (!set.contains(i)) {
+        System.out.println("Missing: " + i);
+    }
+}
+
+Question 7: Students who didn’t submit homework
+
+HashSet<String> allStudents = new HashSet<>(Arrays.asList("Amit", "Sita", "Ravi", "Neha"));
+HashSet<String> submitted = new HashSet<>(Arrays.asList("Sita", "Neha"));
+allStudents.removeAll(submitted);
+System.out.println("Didn’t submit: " + allStudents);
+
+Question 8: Unique words in a sentence
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter a sentence:");
+String sentence = sc.nextLine();
+String[] words = sentence.split(" ");
+HashSet<String> uniqueWords = new HashSet<>(Arrays.asList(words));
+System.out.println("Unique words: " + uniqueWords);
+
+Question 9: Unique characters in a string
+
+String str = "banana";
+HashSet<Character> chars = new HashSet<>();
+for (char ch : str.toCharArray()) {
+    chars.add(ch);
+}
+System.out.println("Unique chars: " + chars);
+
+Question 10: Square of all elements in new set
+
+HashSet<Integer> set = new HashSet<>(Arrays.asList(2, 3, 4));
+HashSet<Integer> squared = new HashSet<>();
+for (int num : set) {
+    squared.add(num * num);
+}
+System.out.println("Squared elements: " + squared);
