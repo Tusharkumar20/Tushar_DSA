@@ -1,0 +1,41 @@
+Day 31 Questions (HashMap Level 1)
+Topic: Introduction to HashMap – Very Easy Questions
+
+Hashmap bahut easy topic hota hai aar samag aa jai to.   Bas itna hota hai ki do values ko jodne ke kaam karta hai
+lets say ki mai 10 employes ko alag alag kaam de raha hu aur mughe likhna hai ki rahul=datascience engg
+aur komal = cybersecurity aur mohit = web dev aur shaurya = ai and bla bla bla basically ye associte karta hai
+jaise mai agar computer me dalu ki rahul(key) to wo mughe bata de ga wo kya kaam karta hai datascience(value)
+ise hi kehte hai key value pair kisi ek chis ko dusre se associate karna code me aage istemal karne ke liye
+
+Baki kuch na samag aye to mughse puch lena
+
+
+Question 1: Ek HashMap bana lo jisme student ka naam key ho aur uska marks value. Fir poora map print karo.
+ Hint: map.put("Amit", 90); and System.out.println(map);
+
+Question 2: Ek HashMap me 5 students ke naam aur marks daalo. Fir kisi ek student (jaise "Rahul") ke marks print karo.
+Hint: map.get("Rahul");
+
+Question 3: Ek HashMap me 5 entries daalo. Fir check karo ki "Priya" naam ki key present hai ya nahi.
+ Hint: map.containsKey("Priya");
+
+Question 4: Ek HashMap me 5 students ke naam aur marks daalo. Fir sabhi keys ko print karo.
+ Hint: map.keySet();
+
+Question 5: Ek HashMap me 5 students ke naam aur marks daalo. Fir sabhi values (marks) print karo.
+Hint: map.values();
+
+Question 6: Ek HashMap bana lo aur usme kuch values daal lo. Fir ek key delete karo (jaise “Sita”) aur fir map print karo.
+Hint: map.remove("Sita");
+
+Question 7: Ek HashMap me 5 entries daalo. Fir use for-each loop se sabhi key-value pair print karo.
+Hint: for(Map.Entry<String, Integer> entry : map.entrySet())
+
+Question 8: Ek HashMap bana lo jisme fruits ke naam key ho aur unka price value. Fir total price calculate karo.
+Hint: loop through map.values() and add
+
+Question 9: Ek HashMap bana lo jisme character aur uski frequency daalo (jaise: 'a' = 2, 'b' = 3). Fir map print karo.
+Hint: Just use simple put operations.
+
+Question 10: Ek HashMap me daalo keys: “Java”, “Python”, “C++”, aur values: 10, 20, 30. Fir “Python” ka value update karo 50 se.
+Hint: map.put("Python", 50);
