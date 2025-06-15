@@ -1,0 +1,98 @@
+Day 31 Answers (HashMap Level 1)
+Question 1: Ek HashMap bana lo jisme student ka naam key ho aur uska marks value. Fir poora map print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Amit", 85);
+map.put("Ravi", 90);
+map.put("Neha", 78);
+System.out.println(map);
+
+Question 2: Ek HashMap me 5 students ke naam aur marks daalo. Fir kisi ek student (jaise "Rahul") ke marks print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Rahul", 88);
+map.put("Aman", 76);
+map.put("Priya", 91);
+map.put("Ravi", 83);
+map.put("Neha", 85);
+System.out.println(map.get("Rahul"));
+
+Question 3: Ek HashMap me 5 entries daalo. Fir check karo ki "Priya" naam ki key present hai ya nahi.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Rahul", 88);
+map.put("Aman", 76);
+map.put("Priya", 91);
+map.put("Ravi", 83);
+map.put("Neha", 85);
+System.out.println(map.containsKey("Priya"));
+
+Question 4: Ek HashMap me 5 students ke naam aur marks daalo. Fir sabhi keys ko print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Rahul", 88);
+map.put("Aman", 76);
+map.put("Priya", 91);
+map.put("Ravi", 83);
+map.put("Neha", 85);
+System.out.println(map.keySet());
+
+Question 5: Ek HashMap me 5 students ke naam aur marks daalo. Fir sabhi values (marks) print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Rahul", 88);
+map.put("Aman", 76);
+map.put("Priya", 91);
+map.put("Ravi", 83);
+map.put("Neha", 85);
+System.out.println(map.values());
+
+Question 6: Ek HashMap bana lo aur usme kuch values daal lo. Fir ek key delete karo (jaise “Sita”) aur fir map print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Ram", 90);
+map.put("Sita", 95);
+map.put("Laxman", 85);
+map.remove("Sita");
+System.out.println(map);
+
+Question 7: Ek HashMap me 5 entries daalo. Fir use for-each loop se sabhi key-value pair print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("A", 10);
+map.put("B", 20);
+map.put("C", 30);
+map.put("D", 40);
+map.put("E", 50);
+for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + " -> " + entry.getValue());
+}
+
+Question 8: Ek HashMap bana lo jisme fruits ke naam key ho aur unka price value. Fir total price calculate karo.
+
+HashMap<String, Integer> fruits = new HashMap<>();
+fruits.put("Apple", 100);
+fruits.put("Banana", 40);
+fruits.put("Mango", 60);
+int sum = 0;
+for (int price : fruits.values()) {
+    sum += price;
+}
+System.out.println("Total price: " + sum);
+
+Question 9: Ek HashMap bana lo jisme character aur uski frequency daalo (jaise: 'a' = 2, 'b' = 3). Fir map print karo.
+
+HashMap<Character, Integer> freq = new HashMap<>();
+freq.put('a', 2);
+freq.put('b', 3);
+freq.put('c', 1);
+System.out.println(freq);
+
+Question 10: Ek HashMap me daalo keys: “Java”, “Python”, “C++”, aur values: 10, 20, 30. Fir “Python” ka value update karo 50 se.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Java", 10);
+map.put("Python", 20);
+map.put("C++", 30);
+map.put("Python", 50); // overwrite
+System.out.println(map);
