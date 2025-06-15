@@ -1,0 +1,33 @@
+Day 32 Questions (HashMap Level 2)
+Level: Slightly Higher but Still Simple and Clear
+
+Question 1: Ek string array lo jisme names hain. Ek HashMap bana lo jo count kare kaun sa name kitni baar aaya.
+Hint: Loop through array, map.put(name, map.getOrDefault(name, 0) + 1);
+
+Question 2: Ek HashMap me students ke naam aur unke marks daalo. Fir highest marks wale student ka naam print karo.
+ Hint: Track max value and corresponding key.
+
+Question 3: Ek HashMap me keys me students aur values me unka city daalo. Fir sabhi students print karo jo “Delhi” se hain.
+Hint: Check if map.get(key).equals("Delhi")
+
+Question 4: Ek HashMap me koi bhi key ko update karo sirf agar wo pehle se exist karti ho.
+Hint: if(map.containsKey(key))
+
+Question 5: Ek HashMap me sabhi keys ko print karo jo even length wale words hain.
+ Hint: if(key.length() % 2 == 0)
+
+Question 6: Ek HashMap me daalo cities aur unka population. Fir wo city print karo jiska population 1 lakh se zyada hai.
+Hint: loop over entrySet and check condition
+
+Question 7: Ek HashMap me daalo course name aur number of students. Fir map ko size ke hisab se print karo (total kitne courses).
+Hint: map.size()
+
+Question 8: Ek HashMap me daalo product name aur price. Fir print karo sabse mehenga aur sabse sasta product.
+Hint: Track min and max during loop.
+
+Question 9: Ek HashMap me character aur frequency daalo. Fir sirf un characters ko print karo jin ki frequency 2 se zyada ho.
+Hint: if(freq > 2)
+
+Question 10: Ek HashMap me daalo month name aur days (e.g. “January” -> 31). Fir poore saal ke total days print karo.
+ Hint: sum all values
+
