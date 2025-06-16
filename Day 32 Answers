@@ -1,0 +1,124 @@
+Day 32 Answers (HashMap Level 2)
+
+Question 1: Ek string array lo jisme names hain. Ek HashMap bana lo jo count kare kaun sa name kitni baar aaya.
+
+String[] names = {"Amit", "Ravi", "Amit", "Neha", "Ravi", "Ravi"};
+HashMap<String, Integer> map = new HashMap<>();
+for (String name : names) {
+    map.put(name, map.getOrDefault(name, 0) + 1);
+}
+System.out.println(map);
+
+Question 2: Ek HashMap me students ke naam aur unke marks daalo. Fir highest marks wale student ka naam print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Amit", 85);
+map.put("Ravi", 95);
+map.put("Neha", 75);
+String topper = "";
+int max = Integer.MIN_VALUE;
+for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    if (entry.getValue() > max) {
+        max = entry.getValue();
+        topper = entry.getKey();
+    }
+}
+System.out.println("Topper: " + topper);
+
+Question 3: Ek HashMap me keys me students aur values me unka city daalo. Fir sabhi students print karo jo “Delhi” se hain.
+
+HashMap<String, String> map = new HashMap<>();
+map.put("Amit", "Delhi");
+map.put("Ravi", "Mumbai");
+map.put("Neha", "Delhi");
+for (Map.Entry<String, String> entry : map.entrySet()) {
+    if (entry.getValue().equals("Delhi")) {
+        System.out.println(entry.getKey());
+    }
+}
+
+Question 4: Ek HashMap me koi bhi key ko update karo sirf agar wo pehle se exist karti ho.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Amit", 70);
+if (map.containsKey("Amit")) {
+    map.put("Amit", map.get("Amit") + 10);
+}
+System.out.println(map);
+
+Question 5: Ek HashMap me sabhi keys ko print karo jo even length wale words hain.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Apple", 1);
+map.put("Mango", 2);
+map.put("Kiwi", 3);
+for (String key : map.keySet()) {
+    if (key.length() % 2 == 0) {
+        System.out.println(key);
+    }
+}
+
+Question 6: Ek HashMap me daalo cities aur unka population. Fir wo city print karo jiska population 1 lakh se zyada hai.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Delhi", 200000);
+map.put("Indore", 95000);
+map.put("Mumbai", 300000);
+for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    if (entry.getValue() > 100000) {
+        System.out.println(entry.getKey());
+    }
+}
+
+Question 7: Ek HashMap me daalo course name aur number of students. Fir map ko size ke hisab se print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Java", 50);
+map.put("Python", 40);
+map.put("DSA", 60);
+System.out.println("Total courses: " + map.size());
+
+Question 8: Ek HashMap me daalo product name aur price. Fir print karo sabse mehenga aur sabse sasta product.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Laptop", 50000);
+map.put("Phone", 30000);
+map.put("Tablet", 20000);
+String maxProduct = "", minProduct = "";
+int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
+for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    if (entry.getValue() > max) {
+        max = entry.getValue();
+        maxProduct = entry.getKey();
+    }
+    if (entry.getValue() < min) {
+        min = entry.getValue();
+        minProduct = entry.getKey();
+    }
+}
+System.out.println("Mehenga: " + maxProduct + ", Sasta: " + minProduct);
+
+Question 9: Ek HashMap me character aur frequency daalo. Fir sirf un characters ko print karo jin ki frequency 2 se zyada ho.
+
+HashMap<Character, Integer> freq = new HashMap<>();
+freq.put('a', 3);
+freq.put('b', 1);
+freq.put('c', 4);
+for (Map.Entry<Character, Integer> entry : freq.entrySet()) {
+    if (entry.getValue() > 2) {
+        System.out.println(entry.getKey());
+    }
+}
+
+Question 10: Ek HashMap me daalo month name aur days. Fir poore saal ke total days print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("January", 31);
+map.put("February", 28);
+map.put("March", 31);
+// add remaining months similarly...
+int total = 0;
+for (int days : map.values()) {
+    total += days;
+}
+System.out.println("Total days: " + total);
