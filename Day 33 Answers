@@ -1,0 +1,234 @@
+Answers(HashMap level 3) day 33 answers
+Question 1: Ek string lo (jaise "aabbccdde") aur character frequency (matlab har ek character kitni baar aa raha hai wo gino) HashMap banao. Fir check karo kaun se characters ek hi baar aaye hain.
+Hint: Loop through string, then loop through map.
+
+Answer:
+
+import java.util.*;
+
+public class Q1 {
+    public static void main(String[] args) {
+        String str = "aabbccdde";
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        for (char ch : str.toCharArray()) {
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        }
+
+        System.out.println("Characters with frequency 1:");
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            if (entry.getValue() == 1) {
+                System.out.println(entry.getKey());
+            }
+        }
+    }
+}
+Question 2: Ek array lo jisme integers hain. HashMap ka use karke har element ki frequency count karo.
+Hint: Similar to string frequency, but use int array.
+
+Answer:
+
+import java.util.*;
+
+public class Q2 {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 2, 3, 1, 4, 5, 2};
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int num : arr) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        System.out.println("Element frequencies:");
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+}
+Question 3: Ek HashMap banao jisme product aur quantity ho. User se ek product ka naam lo aur uski quantity print karo (agar exist karta hai).
+Hint: Scanner + containsKey check
+
+Answer:
+import java.util.*;
+
+public class Q3 {
+    public static void main(String[] args) {
+        HashMap<String, Integer> products = new HashMap<>();
+        products.put("apple", 5);
+        products.put("banana", 10);
+        products.put("mango", 7);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter product name: ");
+        String input = sc.nextLine();
+
+        if (products.containsKey(input)) {
+            System.out.println("Quantity: " + products.get(input));
+        } else {
+            System.out.println("Product not found.");
+        }
+    }
+}
+Question 4:Ek sentence lo (String), uske har word ki frequency count karo using HashMap.
+Hint: sentence.split(" ") se words nikaalo.
+
+Answer:
+
+import java.util.*;
+
+public class Q4 {
+    public static void main(String[] args) {
+        String sentence = "this is a test this is only a test";
+        String[] words = sentence.split(" ");
+        HashMap<String, Integer> map = new HashMap<>();
+
+        for (String word : words) {
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+
+        System.out.println("Word frequencies:");
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+}
+Question 5: Ek HashMap banao jisme student aur marks ho. Fir list of students print karo jinke marks 90+ hain.
+Hint: condition check inside loop
+
+Answer:
+
+import java.util.*;
+
+public class Q5 {
+    public static void main(String[] args) {
+        HashMap<String, Integer> students = new HashMap<>();
+        students.put("Ravi", 92);
+        students.put("Aman", 85);
+        students.put("Sita", 95);
+        students.put("Geeta", 70);
+
+        System.out.println("Students with marks 90+:");
+        for (Map.Entry<String, Integer> entry : students.entrySet()) {
+            if (entry.getValue() >= 90) {
+                System.out.println(entry.getKey());
+            }
+        }
+    }
+}
+Question 6: Ek HashMap banao jisme subject aur marks ho. Fir average marks print karo.
+Hint: Sum all values, divide by map.size()
+
+Answer:
+
+import java.util.*;
+
+public class Q6 {
+    public static void main(String[] args) {
+        HashMap<String, Integer> subjects = new HashMap<>();
+        subjects.put("Math", 85);
+        subjects.put("Science", 90);
+        subjects.put("English", 80);
+
+        int sum = 0;
+        for (int marks : subjects.values()) {
+            sum += marks;
+        }
+
+        double avg = (double) sum / subjects.size();
+        System.out.println("Average marks: " + avg);
+    }
+}
+Question 7: Ek HashMap banao jisme 2 subjects ka comparison karo aur print karo kis subject me zyada marks mile.
+Hint: Compare two keys' values
+
+Answer:
+
+import java.util.*;
+
+public class Q7 {
+    public static void main(String[] args) {
+        HashMap<String, Integer> marks = new HashMap<>();
+        marks.put("Math", 78);
+        marks.put("Science", 85);
+
+        int mathMarks = marks.get("Math");
+        int scienceMarks = marks.get("Science");
+
+        if (mathMarks > scienceMarks) {
+            System.out.println("More marks in Math");
+        } else if (scienceMarks > mathMarks) {
+            System.out.println("More marks in Science");
+        } else {
+            System.out.println("Equal marks in both");
+        }
+    }
+}
+Question 8: Ek array of names lo. Fir use HashMap me convert karo jaha key = name, value = name ka length.
+Hint: loop through array, put(name, name.length())
+
+Answer:
+
+import java.util.*;
+
+public class Q8 {
+    public static void main(String[] args) {
+        String[] names = {"Ravi", "Aman", "Sita", "John"};
+        HashMap<String, Integer> map = new HashMap<>();
+
+        for (String name : names) {
+            map.put(name, name.length());
+        }
+
+        System.out.println("Name lengths:");
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+}
+Question 9: Ek HashMap me keys me course name aur values me fees ho. Fir total fees print karo jo sab courses ki mila kar banti hai.
+Hint: sum of values
+
+import java.util.*;
+
+public class Q9 {
+    public static void main(String[] args) {
+        HashMap<String, Integer> courses = new HashMap<>();
+        courses.put("Java", 5000);
+        courses.put("Python", 4000);
+        courses.put("DSA", 6000);
+
+        int total = 0;
+        for (int fee : courses.values()) {
+            total += fee;
+        }
+
+        System.out.println("Total fees: " + total);
+    }
+}
+Question 10: Ek HashMap me daalo player ka naam aur uske run score. Fir highest scoring player print karo aur uska score.
+Hint: max logic with key-value
+
+Answer:
+
+import java.util.*;
+
+public class Q10 {
+    public static void main(String[] args) {
+        HashMap<String, Integer> players = new HashMap<>();
+        players.put("Virat", 120);
+        players.put("Rohit", 85);
+        players.put("Gill", 140);
+
+        String topPlayer = "";
+        int maxScore = 0;
+
+        for (Map.Entry<String, Integer> entry : players.entrySet()) {
+            if (entry.getValue() > maxScore) {
+                maxScore = entry.getValue();
+                topPlayer = entry.getKey();
+            }
+        }
+
+        System.out.println("Highest Scoring Player: " + topPlayer + " with " + maxScore + " runs");
+    }
+}
