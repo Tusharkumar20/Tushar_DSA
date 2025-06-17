@@ -1,0 +1,32 @@
+Day 34 Questions (Mid-Level Logic Building - Level 1)                                                                              
+  
+Question 1: Ek int array lo aur uska reverse print karo.
+🔹 Hint: for loop ko reverse direction me chalao.
+
+Question 2: Ek string lo aur uske characters ko reverse order me print karo.
+🔹 Hint: charAt(i) use karo aur loop ko peeche se chalao.
+
+Question 3: Ek int array lo aur usme sirf unique elements print karo.
+🔹 Hint: ArrayList ya HashSet ka use karo to ignore duplicates.
+
+Question 4: Ek string lo aur check karo kitne vowels usme hai.
+🔹 Hint: if(ch=='a'||ch=='e'||...) use karo.
+
+Question 5: Ek int array lo aur usme kitne even aur odd elements hai count karo.
+🔹 Hint: if(num % 2 == 0) use karo.
+
+Question 6: Ek string array lo aur check karo koi word duplicate hai ya nahi.
+🔹 Hint: HashSet me daal ke check karo agar already present hai.
+
+Question 7: Ek int array lo aur usme se second largest element find karo.
+🔹 Hint: Pehle max dhundo fir second max dhundo.
+
+Question 8: Ek string lo aur uske sabhi characters ko ASCII values ke saath print karo.
+🔹 Hint: (int) ch lagake print karo.
+
+Question 9: Ek array lo aur usme se sabse bada even number print karo.
+🔹 Hint: if(num % 2 == 0 && num > max).
+
+Question 10: Ek string lo aur check karo kya wo palindrome hai (jaise "madam", "level")
+🔹 Hint: Reverse string banao aur compare karo.
+
