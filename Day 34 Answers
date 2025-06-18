@@ -1,0 +1,105 @@
+Day 34 Answers (Mid-Level Logic Building Level 1)
+
+Question 1: Ek int array lo aur uska reverse print karo.
+
+int[] arr = {1, 2, 3, 4, 5};
+for(int i = arr.length - 1; i >= 0; i--){
+    System.out.print(arr[i] + " ");
+}
+
+Question 2: Ek string lo aur uske characters ko reverse order me print karo.
+
+String str = "hello";
+for(int i = str.length() - 1; i >= 0; i--){
+    System.out.print(str.charAt(i));
+}
+
+Question 3: Ek int array lo aur usme sirf unique elements print karo.
+
+int[] arr = {1, 2, 2, 3, 4, 4, 5};
+HashSet<Integer> set = new HashSet<>();
+for(int num : arr){
+    if(!set.contains(num)){
+        System.out.print(num + " ");
+        set.add(num);
+    }
+}
+
+Question 4: Ek string lo aur check karo kitne vowels usme hai.
+
+String str = "education";
+int count = 0;
+for(int i = 0; i < str.length(); i++){
+    char ch = str.charAt(i);
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+        count++;
+    }
+}
+System.out.println("Vowels: " + count);
+
+Question 5: Ek int array lo aur usme kitne even aur odd elements hai count karo.
+
+int[] arr = {1, 2, 3, 4, 5, 6};
+int even = 0, odd = 0;
+for(int num : arr){
+    if(num % 2 == 0) even++;
+    else odd++;
+}
+System.out.println("Even: " + even + ", Odd: " + odd);
+
+Question 6: Ek string array lo aur check karo koi word duplicate hai ya nahi.
+
+String[] words = {"apple", "banana", "apple", "grape"};
+HashSet<String> set = new HashSet<>();
+boolean duplicate = false;
+for(String word : words){
+    if(set.contains(word)){
+        duplicate = true;
+        break;
+    }
+    set.add(word);
+}
+System.out.println(duplicate ? "Duplicate found" : "No duplicate");
+
+Question 7: Ek int array lo aur usme se second largest element find karo.
+
+int[] arr = {10, 20, 30, 25};
+int max = Integer.MIN_VALUE;
+int secondMax = Integer.MIN_VALUE;
+for(int num : arr){
+    if(num > max){
+        secondMax = max;
+        max = num;
+    } else if(num > secondMax && num != max){
+        secondMax = num;
+    }
+}
+System.out.println("Second Largest: " + secondMax);
+
+Question 8: Ek string lo aur uske sabhi characters ko ASCII values ke saath print karo.
+
+String str = "abc";
+for(int i = 0; i < str.length(); i++){
+    char ch = str.charAt(i);
+    System.out.println(ch + " : " + (int)ch);
+}
+
+Question 9: Ek array lo aur usme se sabse bada even number print karo.
+
+int[] arr = {1, 3, 4, 8, 2, 9};
+int maxEven = -1;
+for(int num : arr){
+    if(num % 2 == 0 && num > maxEven){
+        maxEven = num;
+    }
+}
+System.out.println("Max Even: " + maxEven);
+
+Question 10: Ek string lo aur check karo kya wo palindrome hai (jaise "madam", "level")
+
+String str = "madam";
+String rev = "";
+for(int i = str.length() - 1; i >= 0; i--){
+    rev += str.charAt(i);
+}
+System.out.println(str.equals(rev) ? "Palindrome" : "Not Palindrome");
