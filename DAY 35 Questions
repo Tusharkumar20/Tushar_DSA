@@ -1,0 +1,31 @@
+Day 35 Questions (Mid-Level Logic Building – Level 2)                                                            
+
+Question 1: Ek int array lo jisme kuch elements repeat ho rahe ho. Har repeating element sirf ek baar print karo.
+Hint: HashSet ka use karo for unique values.
+
+Question 2: Ek string lo aur count karo kitne vowels hain.
+Hint: charAt(i) se har letter check karo aur if condition lagao.
+
+Question 3: Ek ArrayList lo aur usme se sabhi even elements remove karke list print karo.
+Hint: removeIf(x -> x % 2 == 0) ka use ho sakta hai.
+
+Question 4: Ek string me se har character ka ASCII value print karo.
+Hint: (int) str.charAt(i) se ASCII milta hai.
+
+Question 5: Ek HashMap lo jisme student name aur unka score ho. Fir sirf un students ke naam print karo jinka score 50 se upar hai.
+Hint: map.get(key) aur map.keySet() loop karo.
+
+Question 6: Ek array lo aur uska maximum difference print karo (bade element - chhote element).
+Hint: Pehle max aur min find karo loop se.
+
+Question 7: Ek HashSet lo aur check karo koi element present hai ya nahi.
+Hint: set.contains(x) se check hota hai.
+
+Question 8: Ek integer variable lo aur use loop me double karte raho jab tak wo 1000 se chhota ho.
+Hint: while(num < 1000) aur num *= 2.
+
+Question 9: Ek array lo aur uske elements ka sum aur average print karo.
+Hint: sum variable aur arr.length ka use.
+
+Question 10: Ek string lo aur check karo woh palindrome hai ya nahi (jaise: madam, racecar).
+Hint: start se aur end se characters compare karo.
