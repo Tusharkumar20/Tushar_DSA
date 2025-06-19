@@ -1,0 +1,34 @@
+Day 36 Questions (Mid-Level Logic Building – Level 3)                                                            
+  
+Aaj ke Questions me ek ya do questions counting sort ke hai so counting sort padh ke aaj ke Question karn very easy sortin technique
+aur sirt ek hi sortin technique sikhne ki jarurat hai basics ke liye
+
+Question 1: Ek int array lo aur usme se second largest element print karo.
+Hint: Pehle max dhoondo, fir uske baad second max.
+
+Question 2: Ek string lo aur count karo kitne consonants hain.
+Hint: vowel check karo, baaki sab consonants.
+
+Question 3: Ek ArrayList lo aur har element ko 2 se multiply karke nayi list me daalo.
+Hint: newList.add(x * 2);
+
+Question 4: Ek HashMap banao jisme product name aur price ho. Fir total price print karo.
+Hint: map.get(key) use karo loop me.
+
+Question 5: Ek string lo aur har uppercase letter ko count karo.
+Hint: ch >= 'A' && ch <= 'Z' se check karo.
+
+Question 6: Ek array lo aur use counting sort se sort karo.
+Hint: pehle max nikaalo, frequency array banao, fir rebuild karo.
+
+Question 7: Ek string array lo jisme kuch naam repeat ho rahe ho. Sirf unique names print karo.
+Hint: HashSet use karo.
+
+Question 8: Ek int array lo aur print karo kitne elements even hai aur kitne odd.
+Hint: ek counter even ke liye aur ek odd ke liye.
+
+Question 9: Ek integer variable lo aur use 10 baar print karo bina loop use kiye.
+Hint: Recursive function ka use karke try karo ya System.out.println bar bar.
+
+Question 10: Ek int array lo jisme 1 se 10 tak ke numbers ho aur ek number missing ho. Us missing number ko print karo.
+Hint: Total sum 1 se 10 ka 55 hota hai. Array ka sum subtract karo.
