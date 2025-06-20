@@ -1,0 +1,104 @@
+Day 36 Answers (Mid-Level Logic Building – Level 3)
+Question 1: Ek int array lo aur usme se second largest element print karo.
+
+int[] arr = {5, 3, 9, 6, 7};
+int max = Integer.MIN_VALUE, secondMax = Integer.MIN_VALUE;
+for (int num : arr) {
+    if (num > max) {
+        secondMax = max;
+        max = num;
+    } else if (num > secondMax && num != max) {
+        secondMax = num;
+    }
+}
+System.out.println("Second Largest: " + secondMax);
+Question 2: Ek string lo aur count karo kitne consonants hain.
+
+String s = "education";
+int count = 0;
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    if ((ch >= 'a' && ch <= 'z') && "aeiou".indexOf(ch) == -1) {
+        count++;
+    }
+}
+System.out.println("Consonants: " + count);
+Question 3: Ek ArrayList lo aur har element ko 2 se multiply karke nayi list me daalo.
+
+ArrayList<Integer> list = new ArrayList<>(Arrays.asList(2, 4, 6));
+ArrayList<Integer> newList = new ArrayList<>();
+for (int x : list) {
+    newList.add(x * 2);
+}
+System.out.println(newList);
+Question 4: Ek HashMap banao jisme product name aur price ho. Fir total price print karo.
+
+HashMap<String, Integer> map = new HashMap<>();
+map.put("Pen", 10);
+map.put("Book", 40);
+map.put("Eraser", 5);
+int total = 0;
+for (String item : map.keySet()) {
+    total += map.get(item);
+}
+System.out.println("Total Price: " + total);
+Question 5: Ek string lo aur har uppercase letter ko count karo.
+
+String s = "HelloWorld";
+int count = 0;
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    if (ch >= 'A' && ch <= 'Z') {
+        count++;
+    }
+}
+System.out.println("Uppercase Count: " + count);
+Question 6: Ek array lo aur use counting sort se sort karo.
+
+int[] arr = {1, 4, 2, 1, 3};
+int max = 0;
+for (int num : arr) {
+    if (num > max) max = num;
+}
+int[] freq = new int[max + 1];
+for (int num : arr) {
+    freq[num]++;
+}
+for (int i = 0; i < freq.length; i++) {
+    for (int j = 0; j < freq[i]; j++) {
+        System.out.print(i + " ");
+    }
+}
+Question 7: Ek string array lo jisme kuch naam repeat ho rahe ho. Sirf unique names print karo.
+
+String[] names = {"Amit", "Ravi", "Amit", "Sita", "Ravi"};
+HashSet<String> set = new HashSet<>();
+for (String name : names) {
+    if (!set.contains(name)) {
+        System.out.println(name);
+        set.add(name);
+    }
+}
+Question 8: Ek int array lo aur print karo kitne elements even hai aur kitne odd.
+
+int[] arr = {2, 3, 4, 5, 6};
+int even = 0, odd = 0;
+for (int num : arr) {
+    if (num % 2 == 0) even++;
+    else odd++;
+}
+System.out.println("Even: " + even + ", Odd: " + odd);
+Question 9: Ek integer variable lo aur use 10 baar print karo bina loop use kiye.
+
+System.out.println("5 5 5 5 5 5 5 5 5 5");
+(ya recursion se kara sakte ho, but yeh simplest hai abhi ke liye)
+
+Question 10: Ek int array lo jisme 1 se 10 tak ke numbers ho aur ek number missing ho. Us missing number ko print karo.
+
+int[] arr = {1, 2, 3, 5, 6, 7, 8, 9, 10};
+int expectedSum = 55;
+int actualSum = 0;
+for (int num : arr) {
+    actualSum += num;
+}
+System.out.println("Missing number: " + (expectedSum - actualSum));
