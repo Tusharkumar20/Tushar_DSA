@@ -1,0 +1,32 @@
+ Day 37 Questions (Mid-Level Logic Building – Level 3)                                                                                
+  
+Question 1: Ek array lo aur check karo kya koi duplicate value hai?
+Hint: HashSet ka use karo. Time Complexity: O(n), Space: O(n)
+
+Question 2: Ek string lo aur reverse karke print karo bina built-in function ke.
+Hint: Loop se piche se print karo.
+
+Question 3: Ek array lo aur uska third maximum element print karo.
+Hint: 3 max variables maintain karo.
+
+Question 4: Ek string lo aur usme se har unique character ko sirf ek baar print karo.
+Hint: LinkedHashSet ka use karo ya manually track karo.
+
+Question 5: Ek ArrayList lo aur use sort karo manually (bubble sort).
+Hint: Do nested loop lagao.
+
+Question 6: Ek array lo aur check karo koi element 2 baar repeat ho raha hai ya nahi.
+Hint: HashMap me frequency store karo.
+
+Question 7: Ek string array lo aur usme longest string print karo.
+Hint: maxLength aur longestString variable use karo.
+
+Question 8: Ek array lo aur count karo kitne elements divisible hain kisi user input number se.
+Hint: x % input == 0
+
+Question 9: Ek string lo aur usme se har word ko nayi line me print karo.
+Hint: str.split(" ") use karo.
+
+Question 10: Ek int array lo aur use counting sort se sort karo. Fir sorted array print karo.
+Hint: Ye revision hai counting sort ka from Day 36.
+
