@@ -1,0 +1,31 @@
+Day 38 Questions (Mid-Level Logic Building – Level 5)                                                                                                    
+
+Question 1: Ek array lo aur usme se sabhi elements ka product print karo (multiplication).
+Hint: int product = 1; loop me multiply karo.
+
+Question 2: Ek string lo aur check karo kya usme koi digit present hai?
+Hint: ch >= '0' && ch <= '9' check karo.
+
+Question 3: Ek ArrayList lo aur sirf unique values print karo.
+Hint: HashSet me daal kar print karo.
+
+Question 4: Ek HashMap lo aur usme se keys ko sorted order me print karo.
+Hint: TreeMap ka use kar sakte ho.
+
+Question 5: Ek string lo aur count karo kitne uppercase aur lowercase letters hain.
+Hint: if(ch >= 'A' && ch <= 'Z') and else if(ch >= 'a' && ch <= 'z')
+
+Question 6: Ek array lo aur usme se 2nd smallest element print karo.
+Hint: 2 min variables maintain karo.
+
+Question 7: Ek ArrayList lo aur reverse order me print karo bina list ko modify kiye.
+Hint: for loop from list.size() - 1 to 0.
+
+Question 8: Ek string lo aur uske har word ka pehla letter print karo.
+Hint: split() se word nikalo, word.charAt(0) karo.
+
+Question 9: Ek HashSet lo aur check karo kitne unique elements hai jo 5 se divisible hai.
+Hint: if(num % 5 == 0) check karo loop me.
+
+Question 10: Ek array lo aur usme frequency count karo har element ki (jaise counting sort).
+Hint: HashMap se frequency map banao.
