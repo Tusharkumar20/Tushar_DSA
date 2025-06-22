@@ -1,0 +1,30 @@
+Day 39 Questions (Mid-Level Logic Building – Level 6)
+Question 1: Ek array lo aur har element ka square print karo agar wo even hai.
+Hint: if (arr[i] % 2 == 0) then arr[i] * arr[i]
+
+Question 2: Ek string lo aur check karo kitne spaces hain usme.
+Hint: ch == ' ' check karo.
+
+Question 3: Ek HashMap lo aur usme se sirf even keys wale elements print karo.
+Hint: loop on map.keySet() and key % 2 == 0.
+
+Question 4: Ek ArrayList lo aur usme se maximum element remove karo.
+Hint: Collections.max() aur list.remove(val);
+
+Question 5: Ek string lo aur har vowel ko "*" se replace karke print karo.
+Hint: char array me replace karo or use replaceAll().
+
+Question 6: Ek array lo aur find karo kaunse 2 elements ka sum = 10 hai.
+Hint: nested loop or HashSet + complement check.
+
+Question 7: Ek ArrayList lo aur usme duplicates ko hata kar sort karke print karo.
+Hint: TreeSet ka use karo.
+
+Question 8: Ek string lo aur check karo kya woh palindrome hai (ignore case).
+Hint: start & end compare karo and lower case me le lo.
+
+Question 9: Ek array lo aur uske elements ko bina sorting ke second maximum dhoondo.
+Hint: 2 max variables se karo.
+
+Question 10: Ek array lo aur usme se sabhi prime numbers print karo.
+Hint: 2 se num-1 tak divide ho raha ya nahi check karo.
