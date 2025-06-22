@@ -1,0 +1,103 @@
+Day 38 Answers (Mid-Level Logic Building – Level 5)
+Question 1: Ek array lo aur usme se sabhi elements ka product print karo (multiplication).
+
+int[] arr = {2, 3, 4};
+int product = 1;
+for (int num : arr) {
+    product *= num;
+}
+System.out.println("Product: " + product); // Output: 24
+
+Question 2: Ek string lo aur check karo kya usme koi digit present hai?
+
+String s = "abc2d";
+boolean hasDigit = false;
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    if (ch >= '0' && ch <= '9') {
+        hasDigit = true;
+        break;
+    }
+}
+System.out.println(hasDigit ? "Digit present hai" : "Digit nahi hai");
+
+Question 3: Ek ArrayList lo aur sirf unique values print karo.
+
+ArrayList<Integer> list = new ArrayList<>(Arrays.asList(2, 4, 4, 6, 2, 7));
+HashSet<Integer> set = new HashSet<>(list);
+for (int val : set) {
+    System.out.print(val + " ");
+}
+// Output: 2 4 6 7 (order may vary)
+Question 4: Ek HashMap lo aur usme se keys ko sorted order me print karo.
+
+TreeMap<String, Integer> map = new TreeMap<>();
+map.put("Banana", 30);
+map.put("Apple", 20);
+map.put("Orange", 25);
+for (String key : map.keySet()) {
+    System.out.println(key + ": " + map.get(key));
+}
+// Output: Apple, Banana, Orange
+Question 5: Ek string lo aur count karo kitne uppercase aur lowercase letters hain.
+
+String s = "HelloJava";
+int upper = 0, lower = 0;
+for (int i = 0; i < s.length(); i++) {
+    char ch = s.charAt(i);
+    if (ch >= 'A' && ch <= 'Z') upper++;
+    else if (ch >= 'a' && ch <= 'z') lower++;
+}
+System.out.println("Uppercase: " + upper + ", Lowercase: " + lower);
+
+Question 6: Ek array lo aur usme se 2nd smallest element print karo.
+
+int[] arr = {5, 2, 7, 1, 3};
+int min = Integer.MAX_VALUE, secondMin = Integer.MAX_VALUE;
+for (int num : arr) {
+    if (num < min) {
+        secondMin = min;
+        min = num;
+    } else if (num < secondMin && num != min) {
+        secondMin = num;
+    }
+}
+System.out.println("2nd Smallest: " + secondMin);
+
+Question 7: Ek ArrayList lo aur reverse order me print karo bina list ko modify kiye.
+
+ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+for (int i = list.size() - 1; i >= 0; i--) {
+    System.out.print(list.get(i) + " ");
+}
+// Output: 5 4 3 2 1
+Question 8: Ek string lo aur uske har word ka pehla letter print karo.
+
+String str = "hello world java";
+String[] words = str.split(" ");
+for (String word : words) {
+    if (word.length() > 0) {
+        System.out.print(word.charAt(0));
+    }
+}
+// Output: hwj
+Question 9: Ek HashSet lo aur check karo kitne unique elements hai jo 5 se divisible hai.
+
+HashSet<Integer> set = new HashSet<>(Arrays.asList(10, 15, 20, 21, 30));
+int count = 0;
+for (int num : set) {
+    if (num % 5 == 0) {
+        count++;
+    }
+}
+System.out.println("5 se divisible unique elements: " + count);
+Question 10: Ek array lo aur usme frequency count karo har element ki (jaise counting sort).
+
+int[] arr = {2, 3, 2, 1, 3};
+HashMap<Integer, Integer> freq = new HashMap<>();
+for (int num : arr) {
+    freq.put(num, freq.getOrDefault(num, 0) + 1);
+}
+for (int key : freq.keySet()) {
+    System.out.println(key + " -> " + freq.get(key));
+}
