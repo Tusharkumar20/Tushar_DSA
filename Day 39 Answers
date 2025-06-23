@@ -1,0 +1,113 @@
+Day 39 Answers (Mid-Level Logic Building – Level 6)
+
+Question 1: Ek array lo aur har element ka square print karo agar wo even hai.
+
+int[] arr = {2, 3, 4, 5, 6};
+for (int num : arr) {
+    if (num % 2 == 0) {
+        System.out.println(num * num);
+    }
+}
+// Output: 4, 16, 36
+
+Question 2: Ek string lo aur check karo kitne spaces hain usme.
+
+String s = "My name is Khan";
+int count = 0;
+for (int i = 0; i < s.length(); i++) {
+    if (s.charAt(i) == ' ') count++;
+}
+System.out.println("Spaces: " + count);
+// Output: 3
+
+Question 3: Ek HashMap lo aur usme se sirf even keys wale elements print karo.
+
+HashMap<Integer, String> map = new HashMap<>();
+map.put(1, "A");
+map.put(2, "B");
+map.put(4, "C");
+for (int key : map.keySet()) {
+    if (key % 2 == 0) {
+        System.out.println(key + " -> " + map.get(key));
+    }
+}
+// Output: 2 -> B, 4 -> C
+
+Question 4: Ek ArrayList lo aur usme se maximum element remove karo.
+
+ArrayList<Integer> list = new ArrayList<>(Arrays.asList(5, 3, 9, 1));
+int max = Collections.max(list);
+list.remove(Integer.valueOf(max));
+System.out.println(list);
+// Output: [5, 3, 1]
+
+Question 5: Ek string lo aur har vowel ko "*" se replace karke print karo.
+
+String s = "education";
+s = s.replaceAll("[aeiouAEIOU]", "*");
+System.out.println(s);
+// Output: *d*c*t**n
+
+Question 6: Ek array lo aur find karo kaunse 2 elements ka sum = 10 hai.
+
+int[] arr = {1, 2, 7, 3, 5};
+for (int i = 0; i < arr.length; i++) {
+    for (int j = i + 1; j < arr.length; j++) {
+        if (arr[i] + arr[j] == 10) {
+            System.out.println(arr[i] + " + " + arr[j] + " = 10");
+        }
+    }
+}
+// Output: 7 + 3 = 10, 5 + 5 = 10 (if duplicate 5s)
+
+Question 7: Ek ArrayList lo aur usme duplicates ko hata kar sort karke print karo.
+
+ArrayList<Integer> list = new ArrayList<>(Arrays.asList(4, 2, 4, 1, 3));
+TreeSet<Integer> set = new TreeSet<>(list);
+System.out.println(set);
+// Output: [1, 2, 3, 4]
+
+Question 8: Ek string lo aur check karo kya woh palindrome hai (ignore case).
+
+String s = "RaceCar";
+s = s.toLowerCase();
+boolean isPal = true;
+for (int i = 0; i < s.length() / 2; i++) {
+    if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
+        isPal = false;
+        break;
+    }
+}
+System.out.println(isPal ? "Palindrome hai" : "Palindrome nahi hai");
+// Output: Palindrome hai
+
+Question 9: Ek array lo aur uske elements ko bina sorting ke second maximum dhoondo.
+
+int[] arr = {5, 2, 8, 6};
+int max = Integer.MIN_VALUE, second = Integer.MIN_VALUE;
+for (int num : arr) {
+    if (num > max) {
+        second = max;
+        max = num;
+    } else if (num > second && num != max) {
+        second = num;
+    }
+}
+System.out.println("Second max: " + second);
+// Output: 6
+
+Question 10: Ek array lo aur usme se sabhi prime numbers print karo.
+
+int[] arr = {2, 4, 5, 6, 7, 9};
+for (int num : arr) {
+    boolean isPrime = true;
+    if (num <= 1) continue;
+    for (int i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) System.out.println(num);
+}
+// Output: 2, 5, 7
