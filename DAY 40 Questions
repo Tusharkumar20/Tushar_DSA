@@ -1,0 +1,32 @@
+Day 40 Questions (Mid-Level Logic Building – Level 7)
+
+Question 1: Ek array lo aur usme se har unique element ka frequency print karo.
+Hint: HashMap ka use karo.
+
+Question 2: Ek string lo aur uske characters ko reverse order me print karo.
+Hint: Loop from end to start.
+
+Question 3: Ek 2D array lo aur diagonal elements ka sum print karo.
+Hint: i == j wale elements.
+
+Question 4: Ek ArrayList lo aur usme se har element ko sirf tab print karo jab wo previous element se bada ho.
+Hint: list.get(i) > list.get(i-1)
+
+Question 5: Ek HashMap lo aur uske values ko descending order me print karo.
+Hint: entrySet sort karo.
+
+Question 6: Ek string lo aur har word ka length print karo.
+Hint: split() and word.length()
+
+Question 7: Ek array lo aur har second maximum element print karo for each prefix.
+Hint: Loop aur 2 max logic
+
+Question 8: Ek HashSet lo aur usme se prime numbers count karo.
+Hint: Prime checking function banalo.
+
+Question 9: Ek string lo aur check karo koi character more than once repeat ho raha hai kya.
+Hint: HashMap ya frequency array.
+
+Question 10: Ek array lo aur har element ka square print karo agar wo odd number hai.
+Hint: if (x % 2 == 1) then xx*
+
