@@ -1,0 +1,30 @@
+Day 41 – Binary Tree Basics (Level 0) Questions
+
+Question 1: Ek simple Node class banao jisme int data, Node left, aur Node right ho.
+Hint: Ye tree ka base hota hai, jaise array ke liye int[] hota hai.
+
+Question 2: Ek Node object banao jisme data = 10 ho, aur uska left aur right null ho.
+Hint: new Node(10);
+
+Question 3: Ek Node banao data = 10 aur uska left = 5 aur right = 15 banao.
+Hint: Root ka left aur right set karo manually.
+
+Question 4: Tree ka root node ka data print karo.
+Hint: System.out.println(root.data);
+
+Question 5: Tree ka left child ka data print karo.
+Hint: System.out.println(root.left.data);
+
+Question 6: Tree ka right child ka data print karo.
+Hint: System.out.println(root.right.data);
+
+Question 7: Check karo ki kya root node ka left null hai ya nahi.
+Hint: if (root.left != null)
+
+Question 8: 3 nodes banao: 50, 30, 70. Inko tree ke root, left, right me link karo. Fir teeno values print karo.
+
+Question 9: Ek empty root node banao aur check karo kya wo null hai.
+Hint: Node root = null;
+
+Question 10: Ek aisa node structure banao jisme sirf left side me 3 levels ho: 10 → 20 → 30
+Hint: root.left.left banana hoga.
