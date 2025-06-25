@@ -1,0 +1,27 @@
+Day 42 – Binary Tree Level 1 Questions (Node Traversal Print Only, No Recursion)                                                            
+
+Question 1: Ek tree banao with root = 10, left = 20, right = 30. Teeno values ek line me print karo.
+Hint: root.data, root.left.data, root.right.data
+
+Question 2: Ek tree banao jisme root = 5, aur left side me 3 level ka chain ho: 5 → 4 → 3. Har level ka data print karo.
+
+Question 3: Tree ka leftmost value print karo.
+Hint: root.left.left.data
+
+Question 4: Tree ka rightmost value print karo.
+Hint: root.right.right.data
+
+Question 5: Tree me agar kisi node ka left child null ho to "No Left" print karo.
+Hint: if (root.left == null)
+
+Question 6: Ek tree banao aur check karo kya root ka right child 50 hai. Agar haan, toh "Yes" print karo.
+
+Question 7: Tree ke sabhi 3 nodes ka data add karke print karo.
+Hint: root.data + root.left.data + root.right.data
+
+Question 8: Ek tree banao jisme 5 nodes ho. Sirf manually link karo (recursion nahi). Sabhi values print karo.
+
+Question 9: Tree me agar root.left.right exist karta hai, toh uska value print karo.
+
+Question 10: Ek simple tree banao aur uska height manually count karke print karo.
+Hint: root ke neeche kitne levels hai (just count lines, not programmatically).
