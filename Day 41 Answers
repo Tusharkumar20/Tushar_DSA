@@ -1,0 +1,74 @@
+Day 41 – Binary Tree Basics (Level 0) – Answers                                                                                                      
+
+Question 1: Ek simple Node class banao jisme int data, Node left, aur Node right ho.
+
+class Node {
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data) {
+        this.data = data;
+        left = null;
+        right = null;
+    }
+}
+
+Question 2: Ek Node object banao jisme data = 10 ho, aur uska left aur right null ho.
+
+Node root = new Node(10);
+
+Question 3: Ek Node banao data = 10 aur uska left = 5 aur right = 15 banao.
+
+Node root = new Node(10);
+root.left = new Node(5);
+root.right = new Node(15);
+
+Question 4: Tree ka root node ka data print karo.
+
+System.out.println(root.data);  // Output: 10
+
+Question 5: Tree ka left child ka data print karo.
+
+System.out.println(root.left.data);  // Output: 5
+
+Question 6: Tree ka right child ka data print karo.
+
+System.out.println(root.right.data);  // Output: 15
+
+Question 7: Check karo ki kya root node ka left null hai ya nahi.
+
+if (root.left != null) {
+    System.out.println("Left child exists.");
+} else {
+    System.out.println("Left child does not exist.");
+}
+
+Question 8: 3 nodes banao: 50, 30, 70. Inko tree ke root, left, right me link karo. Fir teeno values print karo.
+
+Node root = new Node(50);
+root.left = new Node(30);
+root.right = new Node(70);
+
+System.out.println(root.data);        // 50
+System.out.println(root.left.data);   // 30
+System.out.println(root.right.data);  // 70
+
+Question 9: Ek empty root node banao aur check karo kya wo null hai.
+
+Node root = null;
+
+if (root == null) {
+    System.out.println("Root is null");
+}
+
+Question 10: Ek aisa node structure banao jisme sirf left side me 3 levels ho: 10 → 20 → 30
+
+Node root = new Node(10);
+root.left = new Node(20);
+root.left.left = new Node(30);
+
+// Check structure
+System.out.println(root.data);             // 10
+System.out.println(root.left.data);        // 20
+System.out.println(root.left.left.data);   // 30
