@@ -1,0 +1,33 @@
+Day 43 – Binary Tree Level 2 Questions (Mid Level Traversal)                                                                                                                        
+  
+These questions focus on basic traversal logic, comparisons, value finding, but still without recursion or advanced traversal.
+
+Question 1: Ek tree banao jisme 3 level ho. Har level ke sabhi nodes ko left to right manually print karo.
+Hint: root → root.left → root.right → root.left.left ...
+
+Question 2: Ek tree banao aur uska leftmost leaf node ka data print karo.
+Hint: root.left.left.data
+
+Question 3: Ek tree banao aur root ke children ka sum print karo.
+Hint: root.left.data + root.right.data
+
+Question 4: Ek tree banao jisme root ka left child ka right child = 45 ho. Print karo.
+Hint: root.left.right = new Node(45)
+
+Question 5: Tree ke leaf nodes ke value print karo (jin nodes ka left aur right dono null ho).
+Hint: if (node.left == null && node.right == null)
+
+Question 6: Ek tree me total 5 nodes ho. Print karo total kitne nodes banaye.
+Hint: count manually
+
+Question 7: Ek tree banao aur check karo kya root ka right ka right child 99 hai.
+Hint: if (root.right.right.data == 99)
+
+Question 8: Ek tree banao jisme root ka data = 100 ho, aur left me 3 nodes ho. Sabhi left wale print karo.
+Hint: root → root.left → root.left.left → root.left.left.left
+
+Question 9: Ek tree banao aur check karo kya kisi node ke left aur right dono null hai. Agar hai toh "Leaf" print karo.
+Hint: Same as leaf node check
+
+Question 10: Ek tree banao aur root se start karke sabse last right node tak ka data print karo.
+Hint: root → root.right → root.right.right ...
