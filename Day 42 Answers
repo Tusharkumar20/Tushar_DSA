@@ -1,0 +1,93 @@
+ Day 42 – Binary Tree Level 1 – Answers                                                                                
+// Node class
+class Node {
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data) {
+        this.data = data;
+        left = null;
+        right = null;
+    }
+}
+
+Question 1: Ek tree banao with root = 10, left = 20, right = 30. Teeno values ek line me print karo.
+
+Node root = new Node(10);
+root.left = new Node(20);
+root.right = new Node(30);
+
+System.out.println(root.data + " " + root.left.data + " " + root.right.data);  // Output: 10 20 30
+
+Question 2: Ek tree banao jisme root = 5, aur left side me 3 level ka chain ho: 5 → 4 → 3. Har level ka data print karo.
+
+Node root = new Node(5);
+root.left = new Node(4);
+root.left.left = new Node(3);
+
+System.out.println(root.data);        // 5  
+System.out.println(root.left.data);   // 4  
+System.out.println(root.left.left.data); // 3
+
+Question 3: Tree ka leftmost value print karo.
+
+System.out.println(root.left.left.data);  // Output: 3
+
+Question 4: Tree ka rightmost value print karo.
+
+Node root = new Node(10);
+root.right = new Node(20);
+root.right.right = new Node(30);
+
+System.out.println(root.right.right.data);  // Output: 30
+
+Question 5: Tree me agar kisi node ka left child null ho to "No Left" print karo.
+
+if (root.left == null) {
+    System.out.println("No Left");
+}
+
+Question 6: Ek tree banao aur check karo kya root ka right child 50 hai. Agar haan, toh "Yes" print karo.
+
+Node root = new Node(10);
+root.right = new Node(50);
+
+if (root.right.data == 50) {
+    System.out.println("Yes");
+}
+
+Question 7: Tree ke sabhi 3 nodes ka data add karke print karo.
+
+int sum = root.data + root.left.data + root.right.data;
+System.out.println(sum);  // Output: 10 + 20 + 30 = 60
+
+Question 8: Ek tree banao jisme 5 nodes ho. Sirf manually link karo (recursion nahi). Sabhi values print karo.
+
+Node root = new Node(1);
+root.left = new Node(2);
+root.right = new Node(3);
+root.left.left = new Node(4);
+root.left.right = new Node(5);
+
+System.out.println(root.data);        
+System.out.println(root.left.data);   
+System.out.println(root.right.data);  
+System.out.println(root.left.left.data); 
+System.out.println(root.left.right.data);
+
+Question 9: Tree me agar root.left.right exist karta hai, toh uska value print karo.
+
+if (root.left.right != null) {
+    System.out.println(root.left.right.data);
+}
+
+Question 10: Ek simple tree banao aur uska height manually count karke print karo.
+
+// Tree: 10 -> 20 -> 30
+Node root = new Node(10);
+root.left = new Node(20);
+root.left.left = new Node(30);
+
+// Height = 3 (Levels = 3)
+System.out.println("Height = 3");
