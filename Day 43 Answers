@@ -1,0 +1,85 @@
+Day 43 – Binary Tree Level 2 – Answers                                                            
+
+class Node {
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data) {
+        this.data = data;
+        left = null;
+        right = null;
+    }
+}
+
+Question 1: Ek tree banao jisme 3 level ho. Har level ke sabhi nodes ko left to right manually print karo.
+
+
+Node root = new Node(1);
+root.left = new Node(2);
+root.right = new Node(3);
+root.left.left = new Node(4);
+root.left.right = new Node(5);
+root.right.left = new Node(6);
+root.right.right = new Node(7);
+
+System.out.println(root.data); // 1
+System.out.println(root.left.data + " " + root.right.data); // 2 3
+System.out.println(root.left.left.data + " " + root.left.right.data + " " +
+                   root.right.left.data + " " + root.right.right.data); // 4 5 6 7
+Question 2: Ek tree banao aur uska leftmost leaf node ka data print karo.
+
+System.out.println(root.left.left.data); // Output: 4
+
+Question 3: Ek tree banao aur root ke children ka sum print karo.
+
+int sum = root.left.data + root.right.data;
+System.out.println(sum); // Output: 5 (2 + 3)
+
+Question 4: Ek tree banao jisme root ka left child ka right child = 45 ho. Print karo.
+
+root.left.right = new Node(45);
+System.out.println(root.left.right.data); // Output: 45
+
+Question 5: Tree ke leaf nodes ke value print karo (jin nodes ka left aur right dono null ho).
+
+if (root.left.left.left == null && root.left.left.right == null)
+    System.out.println(root.left.left.data);
+if (root.left.right.left == null && root.left.right.right == null)
+    System.out.println(root.left.right.data);
+// Similarly for other leaves
+
+Question 6: Ek tree me total 5 nodes ho. Print karo total kitne nodes banaye.
+
+System.out.println("Total nodes = 5");
+
+Question 7: Ek tree banao aur check karo kya root ka right ka right child 99 hai.
+
+root.right.right = new Node(99);
+if (root.right.right.data == 99)
+    System.out.println("Yes");
+
+Question 8: Ek tree banao jisme root ka data = 100 ho, aur left me 3 nodes ho. Sabhi left wale print karo.
+
+Node root = new Node(100);
+root.left = new Node(90);
+root.left.left = new Node(80);
+root.left.left.left = new Node(70);
+
+System.out.println(root.data);
+System.out.println(root.left.data);
+System.out.println(root.left.left.data);
+System.out.println(root.left.left.left.data);
+
+Question 9: Ek tree banao aur check karo kya kisi node ke left aur right dono null hai. Agar hai toh "Leaf" print karo.
+
+if (root.left.right.left == null && root.left.right.right == null)
+    System.out.println("Leaf");
+
+Question 10: Ek tree banao aur root se start karke sabse last right node tak ka data print karo.
+
+Node temp = root;
+while (temp != null) {
+    System.out.println(temp.data);
+    temp = temp.right;
+}
