@@ -1,0 +1,33 @@
+Day 44 – Binary Tree Level 3 Questions                                        
+
+(Traversal Concepts + Pre-order/ In-order basics by hand)
+
+Question 1: Ek tree banao jisme 3 levels ho aur manually preorder traversal (Root → Left → Right) print karo.
+Hint: System.out.println in Root Left Right order
+
+Question 2: Ek tree banao aur manually in-order traversal (Left → Root → Right) print karo.
+Hint: pehle left print karo, fir root, fir right
+
+Question 3: Ek tree banao aur usme leaf nodes print karo (jin ke left/right null ho).
+Hint: if (node.left == null && node.right == null)
+
+Question 4: Ek tree banao aur sirf non-leaf nodes print karo.
+Hint: if (node.left != null || node.right != null)
+
+Question 5: Ek tree me check karo kya root.left.right exist karta hai. Agar karta hai toh uska value print karo.
+Hint: if (root.left.right != null)
+
+Question 6: Ek tree ka root = 10 ho aur har level ka data +10 se increase hota ho (10 → 20 → 30), tree banao aur print karo.
+Hint: Manually set root.left = 20, left.left = 30
+
+Question 7: Ek simple binary tree banao aur root se rightmost leaf tak ke saare data print karo.
+Hint: root → right → right
+
+Question 8: Ek tree banao jisme left subtree aur right subtree ka total sum alag alag print karo.
+Hint: left subtree ka sum + right subtree ka sum
+
+Question 9: Ek tree banao jisme root = 50, left = 30, right = 70, aur check karo kya 30 aur 70 leaf node hain.
+Hint: if left.left == null && left.right == null
+
+Question 10: Ek tree banao jisme total 7 nodes ho. Manually preorder aur inorder dono print karo.
+Hint: Hardcoded tree traversal values line-by-line likho.
