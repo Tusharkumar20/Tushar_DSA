@@ -1,0 +1,34 @@
+Day 45 – Stack Level 0 Questions (Very Basic Stack Question agar samag na ai to ek choti si video dhek lena)                                                                                                                                                                                    
+  
+Use Java's built-in Stack: import java.util.Stack;
+
+Question 1: Ek empty stack banao jisme integers store honge. 5 numbers push karo aur stack print karo.
+Hint: stack.push(value);
+
+Question 2: Ek stack banao aur 3 elements push karo, fir top element print karo.
+Hint: stack.peek(); top element dekhta hai.
+
+Question 3: Ek stack banao, kuch elements push karo, fir ek element pop karo aur stack print karo.
+Hint: stack.pop(); removes top element.
+
+Question 4: Ek stack banao aur check karo kya stack empty hai ya nahi.
+Hint: stack.isEmpty();
+
+Question 5: Ek stack banao aur 3 elements push karo. Fir size print karo.
+Hint: stack.size();
+
+Question 6: Ek stack me 1, 2, 3 push karo aur sabhi elements ko one by one pop karke print karo.
+Hint: use loop with !stack.isEmpty() and stack.pop()
+
+Question 7: Ek string stack banao aur usme 3 strings push karo. Fir last added string print karo.
+Hint: Stack<String> s = new Stack<>();
+
+Question 8: Ek stack banao aur usme 10 se chhote elements hi push karo.
+Hint: if (num < 10) stack.push(num);
+
+Question 9: Ek stack banao aur usme se reverse order me elements print karo using pop.
+Hint: Stack follows LIFO (Last In First Out)
+
+Question 10: Ek stack banao jisme elements push karo aur har step ke baad current top print karo.
+Hint: After push, use peek().
+
