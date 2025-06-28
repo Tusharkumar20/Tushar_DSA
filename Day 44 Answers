@@ -1,0 +1,92 @@
+Day 44 – Binary Tree Level 3 – Answers                                        
+  
+class Node {
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data) {
+        this.data = data;
+        left = null;
+        right = null;
+    }
+}
+
+Question 1: Ek tree banao jisme 3 levels ho aur manually preorder traversal (Root → Left → Right) print karo.
+
+Node root = new Node(10);
+root.left = new Node(20);
+root.right = new Node(30);
+root.left.left = new Node(40);
+root.left.right = new Node(50);
+
+System.out.println(root.data);           // Root
+System.out.println(root.left.data);      // Left
+System.out.println(root.left.left.data); // Left-Left
+System.out.println(root.left.right.data);// Left-Right
+System.out.println(root.right.data);     // Right
+
+Question 2: Ek tree banao aur manually in-order traversal (Left → Root → Right) print karo.
+
+System.out.println(root.left.left.data); // 40
+System.out.println(root.left.data);      // 20
+System.out.println(root.left.right.data);// 50
+System.out.println(root.data);           // 10
+System.out.println(root.right.data);     // 30
+
+Question 3: Ek tree banao aur usme leaf nodes print karo.
+
+if (root.left.left.left == null && root.left.left.right == null)
+    System.out.println(root.left.left.data); // 40
+if (root.left.right.left == null && root.left.right.right == null)
+    System.out.println(root.left.right.data); // 50
+if (root.right.left == null && root.right.right == null)
+    System.out.println(root.right.data); // 30
+
+Question 4: Non-leaf nodes print karo.
+
+if (root.left != null || root.right != null) System.out.println(root.data); // 10
+if (root.left.left != null || root.left.right != null) System.out.println(root.left.data); // 20
+
+Question 5: Check karo root.left.right exist karta hai ya nahi.
+
+if (root.left.right != null)
+    System.out.println(root.left.right.data); // 50
+
+Question 6: Tree with data increasing by 10 each level
+
+Node root = new Node(10);
+root.left = new Node(20);
+root.left.left = new Node(30);
+
+System.out.println(root.data);
+System.out.println(root.left.data);
+System.out.println(root.left.left.data);
+
+Question 7: Root se rightmost leaf tak ke nodes print karo
+
+Node temp = root;
+while (temp != null) {
+    System.out.println(temp.data);
+    temp = temp.right;
+}
+
+Question 8: Left aur Right subtree ka sum print karo
+
+int leftSum = root.left.data + root.left.left.data;
+int rightSum = root.right.data;
+System.out.println("Left Sum = " + leftSum);
+System.out.println("Right Sum = " + rightSum);
+
+Question 9: Check karo kya 30 aur 70 leaf nodes hain
+
+if (root.left.left == null && root.left.right == null)
+    System.out.println("30 is leaf");
+
+if (root.right.left == null && root.right.right == null)
+    System.out.println("70 is leaf");
+
+Question 10: Tree with 7 nodes → Preorder & Inorder manually print
+
+// Preorder: 10 20 40 50 30 60 70
+// Inorder: 40 20 50 10 60 30 70
