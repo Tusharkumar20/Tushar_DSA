@@ -1,0 +1,32 @@
+Day 46 Questions – Stack Level 1                                                                             
+  
+Question 1: Ek stack banao aur 1 se 5 tak ke numbers push karo. Fir sabhi elements ko pop karke reverse order me print karo.
+Hint: LIFO ka use karo (Last In First Out).
+
+Question 2: Ek string stack banao aur user ke 3 naam push karo. Fir stack ka size aur top name print karo.
+Hint: Use stack.size() and stack.peek().
+
+Question 3: Ek stack banao aur usme 10 random numbers daalo. Fir sirf even numbers print karo.
+Hint: Pop karo aur check karo num % 2 == 0.
+
+Question 4: Ek stack banao aur push aur pop ke har step ke baad stack ka size print karo.
+Hint: Use stack.size() after every operation.
+
+Question 5: Ek stack banao aur check karo kya ek specific element present hai ya nahi (jaise 15).
+Hint: stack.contains(15)
+
+Question 6: Ek stack me 5 strings daalo aur fir usse reverse order me print karo (Last in first out).
+Hint: Use loop with pop().
+
+Question 7: Ek stack banao aur usme elements push karo. Fir har element ko double karke nayi stack me daalo.
+Hint: Pop original, multiply by 2, push in new stack.
+
+Question 8: Ek stack banao aur usme sirf unique elements daalo (repeated values skip karo).
+Hint: Set ka use karo duplicate check ke liye.
+
+Question 9: Ek stack me 1 se 10 tak ke numbers daalo. Fir sirf un elements ko print karo jo 3 se divisible hain.
+Hint: % 3 == 0 check karo during pop.
+
+Question 10: Ek stack banao aur top 2 elements swap karo.
+Hint: Pop two times, swap them, fir push wapas.
+
