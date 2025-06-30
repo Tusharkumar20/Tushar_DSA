@@ -1,0 +1,33 @@
+Day 47 Questions – Stack Level 2                                        
+    
+These questions push them a little more, keeping it simple with hints.
+
+Question 1: Ek stack banao aur usme 10 numbers daalo. Fir stack ko empty karte hue sum calculate karo aur print karo.
+Hint: Pop har element aur sum me add karo.
+
+Question 2: Ek string stack banao jisme alphabets ho. Fir reverse order me print karo using stack.
+Hint: Push characters then pop.
+
+Question 3: Ek stack banao aur usme elements ko push karo. Fir maximum element print karo.
+Hint: Loop me pop karo aur max update karo.
+
+Question 4: Ek stack banao aur elements ko push karo. Fir ek nayi stack banao jisme same elements reverse order me ho.
+Hint: Pop from original, push to new.
+
+Question 5: Ek stack banao aur check karo kya wo palindrome banata hai ya nahi (jaise: 1 2 3 2 1).
+Hint: Ek aur stack banao aur compare karo.
+
+Question 6: Ek stack me 1 se 5 tak ke numbers daalo. Fir unko ArrayList me convert karke print karo.
+Hint: list.add(stack.pop()) jab tak stack empty na ho.
+
+Question 7: Ek stack banao aur usme 5 elements daalo. Fir har element ko square karke print karo.
+Hint: pop karo aur val * val karo.
+
+Question 8: Ek stack banao aur usme 10 numbers push karo. Fir 2 se divisible elements ko nikal kar ek nayi stack me daalo.
+Hint: if val % 2 == 0 then push to newStack.
+
+Question 9: Ek stack banao aur pehle 5 numbers push karo, fir 2 elements pop karo aur bacha hua stack print karo.
+Hint: Do baar pop() lagao.
+
+Question 10: Ek stack banao aur usme sirf odd numbers daalo. Fir top se bottom tak sabhi values print karo.
+Hint: Pop karo loop me.
