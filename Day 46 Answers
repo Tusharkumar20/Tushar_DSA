@@ -1,0 +1,107 @@
+ Day 46 Answers – Stack Level 1                                                                               
+  
+Question 1: Ek stack banao aur 1 se 5 tak ke numbers push karo. Fir sabhi elements ko pop karke reverse order me print karo.
+Stack<Integer> stack = new Stack<>();
+for (int i = 1; i <= 5; i++) {
+    stack.push(i);
+}
+while (!stack.isEmpty()) {
+    System.out.println(stack.pop());
+}
+// Output: 5 4 3 2 1
+
+Question 2: Ek string stack banao aur user ke 3 naam push karo. Fir stack ka size aur top name print karo.
+Stack<String> stack = new Stack<>();
+stack.push("Amit");
+stack.push("Rahul");
+stack.push("Neha");
+System.out.println("Size: " + stack.size());         // Output: 3
+System.out.println("Top name: " + stack.peek());      // Output: Neha
+
+Question 3: Ek stack banao aur usme 10 random numbers daalo. Fir sirf even numbers print karo.
+Stack<Integer> stack = new Stack<>();
+int[] arr = {12, 9, 8, 7, 6, 5, 14, 3, 2, 1};
+for (int num : arr) {
+    stack.push(num);
+}
+while (!stack.isEmpty()) {
+    int val = stack.pop();
+    if (val % 2 == 0) {
+        System.out.println(val);
+    }
+}
+// Output: 2 14 6 8 12 (even numbers)
+
+Question 4: Ek stack banao aur push aur pop ke har step ke baad stack ka size print karo.
+Stack<Integer> stack = new Stack<>();
+stack.push(10);
+System.out.println("Size after push: " + stack.size());
+stack.push(20);
+System.out.println("Size after push: " + stack.size());
+stack.pop();
+System.out.println("Size after pop: " + stack.size());
+
+Question 5:Ek stack banao aur check karo kya ek specific element present hai ya nahi (jaise 15).
+Stack<Integer> stack = new Stack<>();
+stack.push(5);
+stack.push(10);
+stack.push(15);
+System.out.println(stack.contains(15));  // Output: true
+
+Question 6: Ek stack me 5 strings daalo aur fir usse reverse order me print karo (Last in first out).
+Stack<String> stack = new Stack<>();
+stack.push("One");
+stack.push("Two");
+stack.push("Three");
+while (!stack.isEmpty()) {
+    System.out.println(stack.pop());
+}
+// Output: Three Two One
+
+Question 7: Ek stack banao aur usme elements push karo. Fir har element ko double karke nayi stack me daalo.
+Stack<Integer> original = new Stack<>();
+Stack<Integer> doubled = new Stack<>();
+original.push(3);
+original.push(5);
+original.push(7);
+while (!original.isEmpty()) {
+    int val = original.pop();
+    doubled.push(val * 2);
+}
+System.out.println(doubled);  // Output: [6, 10, 14]
+
+Question 8: Ek stack banao aur usme sirf unique elements daalo (repeated values skip karo).
+Stack<Integer> stack = new Stack<>();
+Set<Integer> seen = new HashSet<>();
+int[] nums = {5, 10, 5, 20, 10, 30};
+for (int num : nums) {
+    if (!seen.contains(num)) {
+        stack.push(num);
+        seen.add(num);
+    }
+}
+System.out.println(stack);  // Output: [5, 10, 20, 30]
+
+Question 9: Ek stack me 1 se 10 tak ke numbers daalo. Fir sirf un elements ko print karo jo 3 se divisible hain.
+Stack<Integer> stack = new Stack<>();
+for (int i = 1; i <= 10; i++) {
+    stack.push(i);
+}
+while (!stack.isEmpty()) {
+    int val = stack.pop();
+    if (val % 3 == 0) {
+        System.out.println(val);
+    }
+}
+// Output: 9 6 3
+
+Question 10: Ek stack banao aur top 2 elements swap karo.
+Stack<Integer> stack = new Stack<>();
+stack.push(1);
+stack.push(2);
+int top1 = stack.pop();
+int top2 = stack.pop();
+stack.push(top1);
+stack.push(top2);
+System.out.println(stack);  // Output: [2, 1]                    
+  
