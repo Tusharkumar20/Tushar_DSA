@@ -1,0 +1,119 @@
+Day 47 Answers – Stack Level 2
+
+Question 1:  Ek stack banao aur usme 10 numbers daalo. Fir stack ko empty karte hue sum calculate karo aur print karo.
+Stack<Integer> stack = new Stack<>();
+for (int i = 1; i <= 10; i++) {
+    stack.push(i);
+}
+int sum = 0;
+while (!stack.isEmpty()) {
+    sum += stack.pop();
+}
+System.out.println("Sum: " + sum);  // Output: 55
+
+Question 2: Ek string stack banao jisme alphabets ho. Fir reverse order me print karo using stack.
+String str = "ABCDE";
+Stack<Character> stack = new Stack<>();
+for (int i = 0; i < str.length(); i++) {
+    stack.push(str.charAt(i));
+}
+while (!stack.isEmpty()) {
+    System.out.print(stack.pop());  // Output: EDCBA
+}
+
+Question 3: Ek stack banao aur usme elements ko push karo. Fir maximum element print karo.
+Stack<Integer> stack = new Stack<>();
+stack.push(10);
+stack.push(30);
+stack.push(20);
+int max = Integer.MIN_VALUE;
+while (!stack.isEmpty()) {
+    int val = stack.pop();
+    if (val > max) max = val;
+}
+System.out.println("Max: " + max);  // Output: 30
+
+Question 4: Ek stack banao aur elements ko push karo. Fir ek nayi stack banao jisme same elements reverse order me ho.
+Stack<Integer> original = new Stack<>();
+original.push(1);
+original.push(2);
+original.push(3);
+Stack<Integer> reversed = new Stack<>();
+while (!original.isEmpty()) {
+    reversed.push(original.pop());
+}
+System.out.println(reversed);  // Output: [3, 2, 1]
+
+Question 5: Ek stack banao aur check karo kya wo palindrome banata hai ya nahi (jaise: 1 2 3 2 1).
+int[] arr = {1, 2, 3, 2, 1};
+Stack<Integer> stack1 = new Stack<>();
+Stack<Integer> stack2 = new Stack<>();
+for (int num : arr) {
+    stack1.push(num);
+}
+for (int i = arr.length - 1; i >= 0; i--) {
+    stack2.push(arr[i]);
+}
+boolean isPalindrome = true;
+while (!stack1.isEmpty()) {
+    if (!stack1.pop().equals(stack2.pop())) {
+        isPalindrome = false;
+        break;
+    }
+}
+System.out.println("Palindrome? " + isPalindrome);  // Output: true
+
+Question 6: Ek stack me 1 se 5 tak ke numbers daalo. Fir unko ArrayList me convert karke print karo.
+Stack<Integer> stack = new Stack<>();
+ArrayList<Integer> list = new ArrayList<>();
+stack.push(1);
+stack.push(2);
+stack.push(3);
+while (!stack.isEmpty()) {
+    list.add(stack.pop());
+}
+System.out.println(list);  // Output: [3, 2, 1]
+
+Question 7: Ek stack banao aur usme 5 elements daalo. Fir har element ko square karke print karo.
+Stack<Integer> stack = new Stack<>();
+stack.push(2);
+stack.push(3);
+stack.push(4);
+while (!stack.isEmpty()) {
+    int val = stack.pop();
+    System.out.println(val * val);
+}
+// Output: 16 9 4
+
+Question 8: Ek stack banao aur usme 10 numbers push karo. Fir 2 se divisible elements ko nikal kar ek nayi stack me daalo.
+Stack<Integer> stack = new Stack<>();
+Stack<Integer> evenStack = new Stack<>();
+for (int i = 1; i <= 10; i++) {
+    stack.push(i);
+}
+while (!stack.isEmpty()) {
+    int val = stack.pop();
+    if (val % 2 == 0) evenStack.push(val);
+}
+System.out.println(evenStack);  // Output: [10, 8, 6, 4, 2]
+
+Question 9: Ek stack banao aur pehle 5 numbers push karo, fir 2 elements pop karo aur bacha hua stack print karo.
+Stack<Integer> stack = new Stack<>();
+stack.push(5);
+stack.push(10);
+stack.push(15);
+stack.push(20);
+stack.push(25);
+stack.pop();
+stack.pop();
+System.out.println(stack);  // Output: [5, 10, 15]
+
+Question 10: Ek stack banao aur usme sirf odd numbers daalo. Fir top se bottom tak sabhi values print karo.
+Stack<Integer> stack = new Stack<>();
+stack.push(1);
+stack.push(3);
+stack.push(5);
+while (!stack.isEmpty()) {
+    System.out.println(stack.pop());
+}
+// Output: 5 3 1
