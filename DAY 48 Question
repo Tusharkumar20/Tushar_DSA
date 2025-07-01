@@ -1,0 +1,31 @@
+Day 48 Questions – Stack Level 3                                                                                                                        
+
+Question 1: Ek stack banao aur usme 1 se 10 tak ke numbers daalo. Fir usme se har dusra element remove karo.
+Hint: Ek temporary stack ka use karo aur alternate element skip karo.
+
+Question 2: Ek stack me 5 strings daalo. Fir unko reverse order me print karo aur unka length bhi print karo.
+Hint: stack.pop() aur string.length().
+
+Question 3: Ek string lo aur uske characters ko stack me daalo. Fir vowel count karo.
+Hint: Pop character aur check vowel.
+
+Question 4: Ek stack lo aur check karo ki usme palindrome banne wale elements hain ya nahi (1 2 3 2 1).
+Hint: Use two stacks and compare.
+
+Question 5: Ek stack lo jisme mixed even/odd numbers hain. Ek naye stack me sirf odd number daalo aur usko print karo.
+Hint: if val % 2 != 0.
+
+Question 6: Ek stack lo aur usme sirf positive numbers store karo. Fir total ka square root calculate karo (manually using multiply).
+Hint: pehle sum lo fir square root logic: for ii == sum.*
+
+Question 7: Ek stack lo aur har element ke square ko ek ArrayList me daal kar print karo.
+Hint: list.add(xx);*
+
+Question 8: Ek stack lo aur har element ko 2 se divide karke push karo naye stack me. Fir dono print karo.
+Hint: use 2 stacks.
+
+Question 9: Ek string stack lo aur reverse karke nayi string bana kar print karo.
+Hint: pop and add to StringBuilder.
+
+Question 10: Ek stack lo aur har element ko pop karte waqt batao ki kitne elements abhi bhi bache hain.
+Hint: stack.size() ke through check karo before each pop.
