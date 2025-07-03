@@ -1,0 +1,119 @@
+Question 1: Ek node class banao jisme int data aur Node next ho. Fir ek node banao jisme data 10 ho aur print karo.
+class Node {
+    int data;
+    Node next;
+    Node(int data) {
+        this.data = data;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Node node = new Node(10);
+        System.out.println(node.data);
+    }
+}
+
+Question 2: Do nodes banao (10 aur 20), aur unko link karo. Fir dono ka data print karo.
+Node node1 = new Node(10);
+Node node2 = new Node(20);
+node1.next = node2;
+System.out.println(node1.data);
+System.out.println(node1.next.data);
+
+Question 3: Ek linked list banao jisme teen nodes ho (10 → 20 → 30). Sabka data print karo.
+Node head = new Node(10);
+head.next = new Node(20);
+head.next.next = new Node(30);
+Node temp = head;
+while (temp != null) {
+    System.out.println(temp.data);
+    temp = temp.next;
+}
+
+Question 4: Ek linked list banao jisme 4 values ho. Fir last node ka data print karo.
+Node head = new Node(10);
+head.next = new Node(20);
+head.next.next = new Node(30);
+head.next.next.next = new Node(40);
+Node temp = head;
+while (temp.next != null) {
+    temp = temp.next;
+}
+System.out.println("Last node: " + temp.data);
+
+Question 5: Ek linked list banao aur count karo usme kitne nodes hai.
+Node head = new Node(10);
+head.next = new Node(20);
+head.next.next = new Node(30);
+int count = 0;
+Node temp = head;
+while (temp != null) {
+    count++;
+    temp = temp.next;
+}
+System.out.println("Total nodes: " + count);
+
+Question 6: Ek linked list banao aur usme se sabhi data elements ka sum print karo.
+Node head = new Node(10);
+head.next = new Node(20);
+head.next.next = new Node(30);
+int sum = 0;
+Node temp = head;
+while (temp != null) {
+    sum += temp.data;
+    temp = temp.next;
+}
+System.out.println("Sum: " + sum);
+
+Question 7: Ek linked list banao aur check karo koi particular value (jaise 20) present hai ya nahi.
+Node head = new Node(10);
+head.next = new Node(20);
+head.next.next = new Node(30);
+Node temp = head;
+boolean found = false;
+while (temp != null) {
+    if (temp.data == 20) {
+        found = true;
+        break;
+    }
+    temp = temp.next;
+}
+System.out.println("20 present? " + found);
+
+Question 8: Ek linked list banao aur usme se sabhi even values print karo.
+Node head = new Node(10);
+head.next = new Node(15);
+head.next.next = new Node(20);
+Node temp = head;
+while (temp != null) {
+    if (temp.data % 2 == 0) {
+        System.out.println(temp.data);
+    }
+    temp = temp.next;
+}
+
+Question 9: Ek linked list banao aur usme se maximum value find karo.
+Node head = new Node(5);
+head.next = new Node(12);
+head.next.next = new Node(8);
+int max = Integer.MIN_VALUE;
+Node temp = head;
+while (temp != null) {
+    if (temp.data > max) max = temp.data;
+    temp = temp.next;
+}
+System.out.println("Max value: " + max);
+
+Question 10: Ek linked list banao aur uske sabhi elements ko reverse order me print karo (arraylist me store karke).
+Node head = new Node(10);
+head.next = new Node(20);
+head.next.next = new Node(30);
+ArrayList<Integer> list = new ArrayList<>();
+Node temp = head;
+while (temp != null) {
+    list.add(temp.data);
+    temp = temp.next;
+}
+for (int i = list.size() - 1; i >= 0; i--) {
+    System.out.println(list.get(i));
+}
