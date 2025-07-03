@@ -1,0 +1,32 @@
+Day 50 Questions – Linked List Level 1
+                    
+Question 1: Ek linked list banao aur usme 5 nodes daalo. Fir sabhi nodes ka data ek line me print karo.
+Hint: Use while loop and System.out.print(temp.data + " ");
+
+Question 2: Ek linked list banao aur usme se koi specific value (jaise 30) ko search karo aur print karo "Found" ya "Not Found".
+Hint: if (temp.data == 30)
+
+Question 3: Ek linked list banao aur usme sabhi odd numbers count karo.
+Hint: if (temp.data % 2 != 0) → count++
+
+Question 4: Ek linked list banao aur sabhi even values ko double karke print karo.
+ Hint: if (temp.data % 2 == 0) → temp.data * 2
+
+Question 5: Ek linked list banao aur sabhi values ko ek ArrayList me daal kar us ArrayList ko print karo.
+ Hint: list.add(temp.data)
+
+Question 6: Ek linked list banao aur usme se smallest aur largest element print karo.
+Hint: Loop lagao, min aur max update karo.
+
+Question 7: Ek linked list banao aur sirf un values ko print karo jo 5 se divisible hai.
+Hint: temp.data % 5 == 0
+
+Question 8: Ek linked list banao aur usme sirf positive numbers ka sum print karo.
+ Hint: if (temp.data > 0) sum += data
+
+Question 9: Ek linked list banao aur har alternate node ka data print karo.
+ Hint: boolean skip = false; skip ke saath loop chalao
+
+Question 10: Ek linked list banao jisme kuch values negative ho, fir sirf negative values print karo.
+ Hint: if (temp.data < 0)
+
